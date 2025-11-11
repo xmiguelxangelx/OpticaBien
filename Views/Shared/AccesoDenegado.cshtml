@@ -1,0 +1,28 @@
+﻿@* Este es el bloque de código C# que define el título de la página. *@
+@{
+    ViewData["Title"] = "Acceso Denegado (Error 404)";
+}
+
+<div class="container text-center py-5">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="my-5 d-flex justify-content-center">
+                <img src="/imagenes/404.jpeg"
+                     alt="Acceso Denegado - Prohibido"
+                     class="img-fluid rounded shadow"
+                     style="max-width: 2300px; height: 1450px;">
+            </div>
+
+            <p class="mt-4">
+                <div class="text-center mt-3">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-light border w-100">
+                        🏠 Volver al inicio
+                    </a>
+                </div>
+                @* Si tienes una página de Login, puedes agregarla aquí: *@
+                @* <a href="/Login" class="btn btn-secondary btn-lg ml-2">Ir a Iniciar Sesión</a> *@
+            </p>
+        </div>
+    </div>
+</div>

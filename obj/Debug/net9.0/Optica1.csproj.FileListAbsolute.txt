@@ -1,0 +1,1351 @@
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\appsettings.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.exe
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.deps.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Optica1.pdb
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-b9sayid5wm.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.pdb
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+C:\Users\Janus\Downloads\op\Optica1\Optica1\obj\Debug\net9.0\ref\Optica1.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\appsettings.Development.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\appsettings.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.exe
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.deps.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Optica1.pdb
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ClosedXML.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Humanizer.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+C:\opticaTodo\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\opticaTodo\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+C:\opticaTodo\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-b9sayid5wm.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.dll
+C:\opticaTodo\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.pdb
+C:\opticaTodo\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+C:\opticaTodo\Optica1\obj\Debug\net9.0\ref\Optica1.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\libman.json
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\0ym0pe2oo5-3mu0h9tx89.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\0dnxacmfg1-cmhhdwqdyz.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\cwd8jfb15z-5zybp921qk.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\9cr3apw9vn-eict21by8z.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zfb0u1cuum-rvhlnuwl0w.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\0x1yll2kig-8tr2uchqr5.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\z2vvzov57d-oyhlwpn2ry.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\b3mgk5aiol-37l46l7i6j.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\p45n0mvli7-9ozp8y9mwk.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\liwenbnxxi-33kherj0x8.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\5v9y4pro0f-xw9ktltpoq.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\tm5wkyagh8-vv23opoj39.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\5riu31n6u6-utrc60xe8f.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\2e1apgaach-m5ioe6x05t.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\gemmkec2lf-ogfnvmm9u4.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\w4jzgx1uni-msy1qwdlar.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\jdacmy66tz-wygj0g0egz.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\bh9j261y37-qnll27bpxk.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\1bj1ghi8w8-vppv4xf58g.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zy9jojv5sc-wbpfeoezp3.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\d1w4m7jtin-ytu0mno2ng.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\1n3kyznh8n-wuwc8kk5a5.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zjsc613cns-a2ww84rxre.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\5ppkded08h-parinopxbm.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\w8p2g74tkd-r2l44wjr8p.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\zwbik4f2q9-9b4bpgjbx0.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\acih9kcdwr-m56mxgorfm.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\e5emiiqpwn-iclhr71gek.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\xa0ikxrj0a-5q5v2m71js.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\ki877sng4p-n9b8won2d5.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\epfaingwju-e9652imd4e.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\ip1jiwpbp7-1il7se3zg6.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\qzcm3n7kgt-4abcade5u8.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\3toleilubn-huwngg65ec.gz
+C:\opticaTodo\Optica1\obj\Debug\net9.0\compressed\h0bzesjzxe-22n2g2hpag.gz
+C:\opticaTodo\Optica1\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\opticaTodo\Optica1\bin\Debug\net9.0\RBush.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\appsettings.Development.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\appsettings.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\libman.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.exe
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.deps.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Optica1.pdb
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Humanizer.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\RBush.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\0ym0pe2oo5-3mu0h9tx89.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\0dnxacmfg1-cmhhdwqdyz.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\cwd8jfb15z-5zybp921qk.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\9cr3apw9vn-eict21by8z.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zfb0u1cuum-rvhlnuwl0w.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\0x1yll2kig-8tr2uchqr5.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\z2vvzov57d-oyhlwpn2ry.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\b3mgk5aiol-37l46l7i6j.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\p45n0mvli7-9ozp8y9mwk.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\liwenbnxxi-33kherj0x8.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\5v9y4pro0f-xw9ktltpoq.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\tm5wkyagh8-vv23opoj39.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\5riu31n6u6-utrc60xe8f.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\2e1apgaach-m5ioe6x05t.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\gemmkec2lf-ogfnvmm9u4.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\w4jzgx1uni-msy1qwdlar.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\jdacmy66tz-wygj0g0egz.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\bh9j261y37-qnll27bpxk.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\1bj1ghi8w8-vppv4xf58g.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zy9jojv5sc-wbpfeoezp3.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\d1w4m7jtin-ytu0mno2ng.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n3kyznh8n-wuwc8kk5a5.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zjsc613cns-a2ww84rxre.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\5ppkded08h-parinopxbm.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\w8p2g74tkd-r2l44wjr8p.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\zwbik4f2q9-9b4bpgjbx0.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\acih9kcdwr-m56mxgorfm.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\e5emiiqpwn-iclhr71gek.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\xa0ikxrj0a-5q5v2m71js.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\ki877sng4p-n9b8won2d5.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\epfaingwju-e9652imd4e.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\ip1jiwpbp7-1il7se3zg6.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\qzcm3n7kgt-4abcade5u8.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\3toleilubn-huwngg65ec.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\h0bzesjzxe-22n2g2hpag.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.dll
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.pdb
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\ref\Optica1.dll
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-c2tiyv64ts.gz
+C:\opticaTodo\Opticabien\Optica1\obj\Debug\net9.0\compressed\jefwpppsin-4gm3k6kx0d.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\libman.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.exe
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.deps.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.pdb
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Humanizer.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\RBush.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-c2tiyv64ts.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jefwpppsin-4gm3k6kx0d.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0ym0pe2oo5-3mu0h9tx89.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0dnxacmfg1-cmhhdwqdyz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\cwd8jfb15z-5zybp921qk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9cr3apw9vn-eict21by8z.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zfb0u1cuum-rvhlnuwl0w.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0x1yll2kig-8tr2uchqr5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z2vvzov57d-oyhlwpn2ry.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\b3mgk5aiol-37l46l7i6j.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\p45n0mvli7-9ozp8y9mwk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\liwenbnxxi-33kherj0x8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5v9y4pro0f-xw9ktltpoq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\tm5wkyagh8-vv23opoj39.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5riu31n6u6-utrc60xe8f.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2e1apgaach-m5ioe6x05t.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gemmkec2lf-ogfnvmm9u4.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w4jzgx1uni-msy1qwdlar.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jdacmy66tz-wygj0g0egz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bh9j261y37-qnll27bpxk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1bj1ghi8w8-vppv4xf58g.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zy9jojv5sc-wbpfeoezp3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\d1w4m7jtin-ytu0mno2ng.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n3kyznh8n-wuwc8kk5a5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zjsc613cns-a2ww84rxre.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5ppkded08h-parinopxbm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w8p2g74tkd-r2l44wjr8p.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zwbik4f2q9-9b4bpgjbx0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\acih9kcdwr-m56mxgorfm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\e5emiiqpwn-iclhr71gek.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\xa0ikxrj0a-5q5v2m71js.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ki877sng4p-n9b8won2d5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\epfaingwju-e9652imd4e.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ip1jiwpbp7-1il7se3zg6.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qzcm3n7kgt-4abcade5u8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3toleilubn-huwngg65ec.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h0bzesjzxe-22n2g2hpag.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.pdb
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\ref\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\libman.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.exe
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.deps.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.pdb
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Humanizer.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\RBush.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-c2tiyv64ts.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jefwpppsin-4gm3k6kx0d.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0ym0pe2oo5-3mu0h9tx89.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0dnxacmfg1-cmhhdwqdyz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\cwd8jfb15z-5zybp921qk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9cr3apw9vn-eict21by8z.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zfb0u1cuum-rvhlnuwl0w.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0x1yll2kig-8tr2uchqr5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z2vvzov57d-oyhlwpn2ry.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\b3mgk5aiol-37l46l7i6j.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\p45n0mvli7-9ozp8y9mwk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\liwenbnxxi-33kherj0x8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5v9y4pro0f-xw9ktltpoq.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\tm5wkyagh8-vv23opoj39.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5riu31n6u6-utrc60xe8f.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2e1apgaach-m5ioe6x05t.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gemmkec2lf-ogfnvmm9u4.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w4jzgx1uni-msy1qwdlar.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jdacmy66tz-wygj0g0egz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bh9j261y37-qnll27bpxk.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1bj1ghi8w8-vppv4xf58g.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zy9jojv5sc-wbpfeoezp3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\d1w4m7jtin-ytu0mno2ng.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n3kyznh8n-wuwc8kk5a5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zjsc613cns-a2ww84rxre.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5ppkded08h-parinopxbm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w8p2g74tkd-r2l44wjr8p.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zwbik4f2q9-9b4bpgjbx0.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\acih9kcdwr-m56mxgorfm.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\e5emiiqpwn-iclhr71gek.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\xa0ikxrj0a-5q5v2m71js.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ki877sng4p-n9b8won2d5.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\epfaingwju-e9652imd4e.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ip1jiwpbp7-1il7se3zg6.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qzcm3n7kgt-4abcade5u8.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3toleilubn-huwngg65ec.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h0bzesjzxe-22n2g2hpag.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.pdb
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+C:\Users\zhari\OneDrive\Documentos\123\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\ref\Optica1.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.Development.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\appsettings.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\libman.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.runtime.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.staticwebassets.endpoints.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.exe
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.deps.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.runtimeconfig.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Optica1.pdb
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ClosedXML.Parser.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ExcelNumberFormat.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Humanizer.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Mono.TextTemplating.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\MySqlConnector.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\RBush.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\SixLabors.Fonts.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.CodeDom.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Convention.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Hosting.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.Runtime.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.Composition.TypedParts.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\System.IO.Packaging.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.AssemblyReference.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rpswa.dswa.cache.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfoInputs.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.AssemblyInfo.cs
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.CoreCompileInputs.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.MvcApplicationPartsAssemblyInfo.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.RazorAssemblyInfo.cs
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjimswa.dswa.cache.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\bundle\Optica1.styles.css
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\scopedcss\projectbundle\Optica1.bundle.scp.css
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\85d8yf1525-c2tiyv64ts.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jefwpppsin-4gm3k6kx0d.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\32sgk636ce-61n19gt1b8.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\k17b6qo1ik-xtxxf3hu2r.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kbk93oy4r9-bqjiyaj88i.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\suj0mb2jpi-c2jlpeoesf.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1uzxocabp-erw9l3u2r3.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\92fgp7yu8e-aexeepp0ev.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zn6lyowmfo-d7shbmvgxk.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kk5nsaiigu-ausgxo2sd3.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5d6xsn9tic-k8d9w2qqmf.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7h6frzu416-cosvhxvwiu.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\anb4igejdx-ub07r2b239.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i1vp9w9mql-fvhpjtyr6v.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2q2j9c7wh8-b7pk76d08c.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3il23gggqn-fsbi9cje9m.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v25ifb3a8l-rzd6atqjts.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\818qlht6gr-ee0r1s7dh0.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h51bqpwp4j-dxx9fxp4il.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ez1lflsvdo-jd9uben2k1.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z8qc4dbdny-khv3u5hwcm.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\rdvjkgxjkv-r4e9w2rdcm.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\j577lysmrk-lcd1t2u6c8.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bzds3v2x3n-c2oey78nd0.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\mw2zf6d71y-tdbxkamptv.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9y4h89pnzw-j5mq2jizvt.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r2bx9nx9tp-06098lyss8.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\14k85gmzhf-nvvlpmu67g.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ozrevzzqcn-s35ty4nyc5.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qcjs8f9875-pj5nd1wqec.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\n5swnidths-46ein0sx1k.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o2mru2m60u-v0zj4ognzu.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\4tvwcnkbp4-37tfw0ft22.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\33rkgme2cc-hrwsygsryq.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pc2xaungsp-pk9g2wxc8p.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6bxbwekj05-ft3s53vfgj.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z1rn6ab8y2-6cfz1n2cew.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3ofquqbao8-6pdc2jztkx.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3bnl7p83ya-493y06b0oq.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zlbct09psy-iovd86k7lj.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h5zi8n1r5d-vr1egmr9el.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\slzohdtpqz-kbrnm935zg.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\v8htulqi3l-jj8uyg4cgr.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\nod0xvladx-y7v9cxd14o.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n1rc7mlcy-notf2xhcfb.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jhlqsyz7pc-h1s4sie4z3.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\s0smwwq2g1-63fj8s7r0e.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\o807tcdij4-0j3bgjxly4.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0ym0pe2oo5-3mu0h9tx89.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0dnxacmfg1-cmhhdwqdyz.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\cwd8jfb15z-5zybp921qk.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\9cr3apw9vn-eict21by8z.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zfb0u1cuum-rvhlnuwl0w.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\0x1yll2kig-8tr2uchqr5.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\z2vvzov57d-oyhlwpn2ry.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\b3mgk5aiol-37l46l7i6j.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\p45n0mvli7-9ozp8y9mwk.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\liwenbnxxi-33kherj0x8.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5v9y4pro0f-xw9ktltpoq.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\tm5wkyagh8-vv23opoj39.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5riu31n6u6-utrc60xe8f.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\2e1apgaach-m5ioe6x05t.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gemmkec2lf-ogfnvmm9u4.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w4jzgx1uni-msy1qwdlar.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\jdacmy66tz-wygj0g0egz.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bh9j261y37-qnll27bpxk.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1bj1ghi8w8-vppv4xf58g.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zy9jojv5sc-wbpfeoezp3.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\d1w4m7jtin-ytu0mno2ng.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\1n3kyznh8n-wuwc8kk5a5.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zjsc613cns-a2ww84rxre.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\5ppkded08h-parinopxbm.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\w8p2g74tkd-r2l44wjr8p.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\zwbik4f2q9-9b4bpgjbx0.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\acih9kcdwr-m56mxgorfm.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\e5emiiqpwn-iclhr71gek.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\xa0ikxrj0a-5q5v2m71js.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ki877sng4p-n9b8won2d5.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\epfaingwju-e9652imd4e.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ip1jiwpbp7-1il7se3zg6.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\qzcm3n7kgt-4abcade5u8.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\3toleilubn-huwngg65ec.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\h0bzesjzxe-22n2g2hpag.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\yw3o3h6i8b-47otxtyo56.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l33ofxjlt7-4v8eqarkd7.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\gcbjp2e16b-356vix0kms.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\r1k36cbkm9-83jwlth58m.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\txp2hr7kba-mrlpezrjn3.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\bwqwbrm1rd-lzl9nlhx6b.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\6ryd6faxob-ag7o75518u.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\noisna69lm-x0q3zqp4vz.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l8tlongnpm-0i3buxo5is.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l89gcdvpjv-o1o13a6vjx.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\ycxw1c4m1u-ttgo8qnofa.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\7s6vn5yrd0-2z0ns9nrw6.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\kwqw3bytd5-muycvpuwrr.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\i2ffrk4uy3-87fc7y1x7t.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\pdu6vbnpfp-mlv21k5csn.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\l4odirrr8g-rj5cmvvtcf.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\compressed\68k87lzq4e-rj5cmvvtcf.gz
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.json.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.development.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.csproj.Up2Date
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\refint\Optica1.dll
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.pdb
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\Optica1.genruntimeconfig.cache
+E:\Downloads\Opticabien (4)\Opticabien (3)\Opticabien\Opticabien\Optica1\obj\Debug\net9.0\ref\Optica1.dll

@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header div img {
+    width: 15vw;
+    height: auto;
+}
+
+header div .col-6 {
+    display: flex;
+    align-items: center;
+}
+
+header div .col svg {
+    width: 2.2vw;
+    height: auto;
+}
+
+header div .col {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding-top: 1vh;
+}
+section .carousel-inner .carousel-item img {
+    height: 70vh;
+    width: auto;
+}
+
+section .card-group {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section .card-group .card {
+    margin: 0 3vw;
+}
+
+.icon-space {
+    margin-right: 15px;
+    width: 24px; 
+    height: 24px; 
+    color: rgb(6,73,131); 
+}
+
+/* Contenedor principal del carrusel */
+.logo-carousel {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* El carril de animación */
+.logo-carousel-track {
+    display: flex;
+    animation: scroll-left 40s linear infinite; /* 40s es la duración, puedes ajustarla */
+}
+
+/* Las imágenes dentro del carril */
+.logo-carousel-track img {
+    height: 200px; /* Tamaño de los logos, ajústalo según el tamaño de tus imágenes */
+    padding: 0 10px; /* Espacio entre los logos */
+    
+    transition: filter 0.3s ease;
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Efecto al pasar el mouse (opcional) */
+.logo-carousel:hover .logo-carousel-track {
+    animation-play-state: paused;
+}
+#videoCarousel {
+    width: 80%; 
+    margin: 0 auto; 
+}

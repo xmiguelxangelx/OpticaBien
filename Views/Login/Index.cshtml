@@ -1,0 +1,79 @@
+﻿@model Optica1.Models.LoginViewModel
+
+<div class="container-fluid d-flex align-items-center justify-content-center min-vh-100"
+     style="background-color: white;">
+    <!-- azul claro -->
+    <div class="col-md-5 col-lg-4">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-header text-center" style="background-color: #005aa7;">
+                <!-- azul oscuro -->
+                <h3 class="text-white fw-bold mb-0">🔐 Iniciar Sesión</h3>
+                <p class="text-white-50 small mt-1">Bienvenido, por favor ingresa tus datos</p>
+            </div>
+
+            <div class="card-body px-4 py-4">
+                <form asp-action="Index" method="post">
+                    <div class="form-group mb-3">
+                        <label asp-for="NombreUsuario" class="fw-semibold text-dark"></label>
+                        <div class="input-group">
+                            <span class="input-group-text" style="background-color:#005aa7; color:white;">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input asp-for="NombreUsuario" class="form-control" placeholder="Usuario" />
+                        </div>
+                        <span asp-validation-for="NombreUsuario" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Clave" class="fw-semibold text-dark"></label>
+                        <div class="input-group">
+                            <span class="input-group-text" style="background-color:#005aa7; color:white;">
+                                <i class="bi bi-lock-fill"></i>
+                            </span>
+                            <input asp-for="Clave" type="password" class="form-control" placeholder="Contraseña" />
+                        </div>
+                        <span asp-validation-for="Clave" class="text-danger small"></span>
+                    </div>
+
+                    <button type="submit"
+                            class="btn w-100 py-2 mt-3 fw-semibold shadow-sm text-white"
+                            style="background-color:#005aa7;">
+                        Entrar
+                    </button>
+                </form>
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger mt-3 text-center small">@ViewBag.Error</div>
+                }
+
+                <hr class="my-4">
+
+                <div class="text-center">
+                    <a asp-controller="Usuario" asp-action="RegistrarCliente"
+                       class="btn w-100 mb-2 fw-semibold"
+                       style="border:2px solid #005aa7; color:#005aa7;">
+                        📝 Crear cuenta nueva
+                    </a>
+                    <a asp-controller="Home" asp-action="Index"
+                       class="btn w-100 fw-semibold text-dark border border-secondary">
+                        🏠 Volver al inicio
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-footer text-center bg-light border-0 small text-muted py-3">
+                © 2025 Óptica — Todos los derechos reservados
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 🔹 Iconos de Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

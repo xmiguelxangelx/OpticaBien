@@ -1,0 +1,21 @@
+﻿@* Este código configura la página de error 404.
+    Todo el código C# debe ir dentro de @{ } y el HTML debajo.
+*@
+@{
+    // Define el título de la página que aparecerá en la pestaña del navegador
+    ViewData["Title"] = "¡Error 404! - Página No Encontrada";
+}
+
+<div style="text-align: center; padding: 50px;">
+    <h1>¡Error 404! 😞</h1>
+    <h2>La dirección web que solicitaste no existe.</h2>
+    <p>El recurso que buscas ha sido removido, renombrado o nunca existió.</p>
+
+    <img src="/imagenes/404.jpeg"
+         alt="Página de Error Personalizada"
+         style="max-width: 600px; height: auto; margin-top: 30px; border: 2px solid #ccc; border-radius: 8px;">
+
+    <p style="margin-top: 40px;">
+        <a href="/" class="btn btn-primary btn-lg">Volver a la Página Principal</a>
+    </p>
+</div>

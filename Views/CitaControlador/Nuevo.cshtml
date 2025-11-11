@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Optica1.Models.Citum;
+<div class="row">
+    <div class="col-8 offset-sm-2">
+        <h2>Nuevas Citas</h2>
+        <form asp-controller="CitaControlador" asp-action="Nuevo" method="post">
+            <div class="m-3">
+                <label>idCita</label>
+                <input  class="form-control" asp-for="IdCita" type="number" required/>
+            </div>
+            <div class="m-3">
+                <label>fecha</label>
+                <input class="form-control" asp-for="Fecha" type="date" />
+            </div>
+            <div class="m-3">
+                <label>hora</label>
+                <input class="form-control" asp-for="Hora" type="time" />
+            </div>
+            <div class="m-3">
+                <label>motivo</label>
+                <input class="form-control" asp-for="Motivo" type="text" />
+            </div>
+            <div class="m-3">
+                <label>estado</label>
+                <input class="form-control" asp-for="Estado" type="text" />
+            </div>
+            <div class="m-3">
+                <label>id_usuariopaciente</label>
+                <input class="form-control" asp-for="IdUsuariopaciente" type="number" />
+            </div>
+            <div class="m-3">
+                <label>id_usuarioempleado</label>
+                <input class="form-control" asp-for="IdUsuarioempleado" type="number" />
+            </div>
+            <div class="m-3">
+                <label>id_historiaclinica</label>
+                <input class="form-control" asp-for="IdHistoriaclinica" type="number" />
+            </div>
+            <div class="m-3">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a asp-controller="CitaControlador"asp-action="Lista"class="btn btn-warning">Volver</a>
+            </div>
+
+
+        </form>
+
+       
+
+
+
+
+    </div>
+
+</div>

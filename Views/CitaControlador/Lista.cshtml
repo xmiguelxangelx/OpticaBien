@@ -1,0 +1,76 @@
+﻿@* La vista de Lista de Citas. Este modelo espera un Listado de objetos Citum. *@
+@{
+    ViewData["Title"] = "Lista de Citas";
+}
+@model List<Optica1.Models.Citum>;
+
+<div class="row">
+    <div class="col-8 offset-sm-2">
+        <h2 class="mb-4">Lista de Citas</h2>
+
+        <div class="mb-3">
+            <a asp-controller="CitaControlador" asp-action="Nuevo" class="btn btn-success">Nuevo</a>
+            <a asp-controller="CitaControlador" asp-action="ExportarExcel" class="btn btn-info">📥 Exportar a Excel</a>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id_cita</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                    <th>Paciente</th>
+                    <th>Empleado</th>
+                    <th>H. Clínica</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdCita</td>                       
+                        <td>@item.Fecha?.ToString("dd/MM/yyyy")</td>
+                        <td>@item.Hora?.ToString("hh\\:mm")</td>
+                        <td>@item.Motivo</td>
+                        <td>@item.Estado</td>
+                        <td>@item.IdUsuariopaciente</td>
+                        <td>@item.IdUsuarioempleado</td>
+                        <td>@item.IdHistoriaclinica</td>
+
+                       
+ 
+                        <td>
+                            <a asp-controller="CitaControlador"
+                               asp-action="Editar"
+                               asp-route-id="@item.IdCita"
+                               class="btn btn-primary btn-sm">
+                                Editar
+                            </a>
+                            <a asp-controller="CitaControlador"
+                               asp-action="Eliminar"
+                               asp-route-id="@item.IdCita"
+                               onclick="return confirmar()"
+                               class="btn btn-danger btn-sm">
+                                Eliminar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-secondary" onclick="window.history.back()">
+            <i class="fas fa-arrow-left"></i> Volver
+        </button>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmar(){
+            return confirm("¿Está seguro de eliminar?");
+        }
+    </script>
+}

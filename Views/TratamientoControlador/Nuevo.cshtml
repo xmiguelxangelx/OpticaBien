@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Optica1.Models.Tratamiento;
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 p-4 shadow-lg rounded-4 bg-light">
+            <h2 class="text-center mb-4 fw-bold" style="color: #0C65B5;">Nuevo Tratamiento</h2>
+
+            <form asp-controller="TratamientoControlador" asp-action="Nuevo" method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">ID Tratamiento</label>
+                    <input class="form-control" asp-for="IdTratamiento" type="number" required placeholder="Ingrese el ID del tratamiento" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Fecha de Edición</label>
+                    <input class="form-control" asp-for="FechaEdicion" type="date" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Detalles del Tratamiento</label>
+                    <input class="form-control" asp-for="DetallesTratamiento" type="text" placeholder="Describa el tratamiento" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Indicaciones</label>
+                    <input class="form-control" asp-for="Indicaciones" type="text" placeholder="Ingrese las indicaciones médicas" />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">ID Diagnóstico</label>
+                    <input class="form-control" asp-for="IdDiagnosticoNavigation" type="number" placeholder="Ingrese el ID del diagnóstico" />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn" type="submit" style="background-color: #0C65B5; color: white;">
+                        <i class="bi bi-save"></i> Guardar
+                    </button>
+
+                    <a asp-controller="TratamientoControlador" asp-action="Lista" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

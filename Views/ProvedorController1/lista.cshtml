@@ -1,0 +1,92 @@
+﻿@model List<Optica1.Models.Proveedor>
+
+<div class="container my-4">
+    <div class="text-center mb-3">
+        <h2 class="fw-bold">Lista de proveedores</h2>
+    </div>
+
+    @if (User.IsInRole("administrador"))
+    {
+        <div class="d-flex justify-content-center mb-3 gap-2">
+            <a asp-controller="ProvedorController1"
+               asp-action="Nuevo"
+               class="btn"
+               style="background-color: #0C65B5; color: white;">
+                <i class="bi bi-plus-circle"></i> Crear
+            </a>
+
+            <a asp-controller="ProvedorController1"
+               asp-action="ExportarExcel"
+               class="btn"
+               style="background-color: #0C65B5; color: white;">
+                <i class="bi bi-file-earmark-excel"></i> Exportar Excel
+            </a>
+        </div>
+    }
+
+    
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered text-center align-middle shadow-lg mx-auto" style="max-width: 90%;">
+            <thead class="">
+                <tr>
+                    <th>ID Proveedor</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    @if (User.IsInRole("administrador"))
+                    {
+                        <th>Acciones</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdProveedorNit</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Direccion</td>
+                        <td>@item.Telefono</td>
+                        <td>@item.Correo</td>
+                        @if (User.IsInRole("administrador"))
+                        {
+                            <td>
+                                <a asp-controller="ProvedorController1"
+                                   asp-action="Editar"
+                                   asp-route-id="@item.IdProveedorNit"
+                                   class="btn btn-primary btn-sm mb-1">
+                                    <i class="bi bi-pencil-square"></i> 
+                                </a>
+
+                                <a asp-controller="ProvedorController1"
+                                   asp-action="Eliminar"
+                                   asp-route-id="@item.IdProveedorNit"
+                                   onclick="return confirmar()"
+                                   class="btn btn-danger btn-sm mb-1">
+                                    <i class="bi bi-trash"></i> 
+                                </a>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-controller="Admin" asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Volver
+        </a>
+    </div>
+</div>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+@section Scripts {
+    <script>
+        function confirmar() {
+            return confirm("¿Está seguro de eliminar?");
+        }
+    </script>
+}

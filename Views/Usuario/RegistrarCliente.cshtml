@@ -1,0 +1,81 @@
+﻿@model Optica1.Models.Persona
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-center bg-success text-white">
+                    <h3>Registro de Cliente</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="RegistrarCliente" method="post">
+                        <div class="form-group mb-3">
+                            <label asp-for="IdPersona">Cédula</label>
+                            <input asp-for="IdPersona" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PrimerNombre">Primer nombre</label>
+                            <input asp-for="PrimerNombre" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PrimerApellido">Primer apellido</label>
+                            <input asp-for="PrimerApellido" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Correo">Correo</label>
+                            <input asp-for="Correo" type="email" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Telefono">Teléfono</label>
+                            <input asp-for="Telefono" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Direccion">Dirección</label>
+                            <input asp-for="Direccion" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="FechaNacimiento">Fecha de nacimiento</label>
+                            <input asp-for="FechaNacimiento" type="date" class="form-control" />
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group mb-3">
+                            <label>Nombre de usuario</label>
+                            <input name="nombreUsuario" class="form-control" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label>Contraseña</label>
+                            <input name="clave" type="password" class="form-control" />
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Registrar</button>
+                    </form>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger mt-3">@ViewBag.Error</div>
+                    }
+
+                    <div class="text-center mt-3">
+                        <a asp-controller="Login" asp-action="Index" class="btn btn-outline-secondary w-100">
+                            ← Volver al Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+💡 Resultado:

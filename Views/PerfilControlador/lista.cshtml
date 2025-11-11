@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Optica1.Models.Perfil>
+
+<div class="container my-4">
+    <div class="text-center mb-3">
+        <h2 class="fw-bold">Lista de Cargos</h2>
+    </div>
+
+    <div class="d-flex justify-content-center mb-3 gap-2">
+        <a asp-controller="PerfilControlador"
+           asp-action="Nuevo"
+           class="btn"
+           style="background-color: #0C65B5; color: white;">
+            <i class="bi bi-plus-circle"></i> Crear
+        </a>
+
+     
+    </div>
+
+   
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered text-center align-middle shadow-lg mx-auto" style="max-width: 90%;">
+            <thead class="">
+                <tr>
+                    <th>ID Perfil</th>
+                    <th>Tipo de Cargo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.IdPerfil</td>
+                        <td>@item.Descripcion</td>
+                        <td>
+                            <a asp-controller="PerfilControlador"
+                               asp-action="Editar"
+                               asp-route-id="@item.IdPerfil"
+                               class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-user-pen"></i>
+                            </a>
+
+                            <a asp-controller="PerfilControlador"
+                               asp-action="Eliminar"
+                               asp-route-id="@item.IdPerfil"
+                               onclick="return confirmar()"
+                               class="btn btn-danger btn-sm">
+                                <i class="fa-solid fa-user-slash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-controller="Admin" asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Volver
+        </a>
+    </div>
+
+</div>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+@section Scripts {
+    <script>
+        function confirmar(){
+            return confirm("esta seguro de eliminar?")
+        }
+    </script>
+}

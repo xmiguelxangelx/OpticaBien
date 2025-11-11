@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Optica1.Models.Proveedor;
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 p-4 shadow-lg rounded-4 bg-light">
+            <h2 class="text-center mb-4 fw-bold" style="color: #0C65B5;">Nuevo Proveedor</h2>
+
+            <form asp-controller="ProvedorController1" asp-action="Nuevo" method="post">
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">ID Proveedor</label>
+                    <input class="form-control" asp-for="IdProveedorNit" type="number" required placeholder="Ingrese el ID del proveedor" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Nombre del Proveedor</label>
+                    <input class="form-control" asp-for="Nombre" type="text" placeholder="Ingrese el nombre del proveedor" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Dirección del Proveedor</label>
+                    <input class="form-control" asp-for="Direccion" type="text" placeholder="Ingrese la dirección del proveedor" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Teléfono del Proveedor</label>
+                    <input class="form-control" asp-for="Telefono" type="number" placeholder="Ingrese el número de teléfono" />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Correo del Proveedor</label>
+                    <input class="form-control" asp-for="Correo" type="text" placeholder="Ingrese el correo electrónico" />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn" type="submit" style="background-color: #0C65B5; color: white;">
+                        <i class="bi bi-save"></i> Guardar
+                    </button>
+
+                    <a asp-controller="ProvedorController1" asp-action="Lista" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
