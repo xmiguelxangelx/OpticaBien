@@ -10,5 +10,7 @@ namespace Optica1.Controllers
         {
             return View();
         }
+
+        // otras acciones del admin...
     }
 }

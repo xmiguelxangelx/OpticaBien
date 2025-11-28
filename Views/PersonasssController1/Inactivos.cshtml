@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Optica1.Models.Persona>
+
+@{
+    ViewData["Title"] = "Clientes inactivos";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Clientes inactivos</h2>
+
+    <div class="d-flex justify-content-between mb-3">
+        <a asp-action="Lista" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Ver activos
+        </a>
+    </div>
+
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light text-center">
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre completo</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var persona in Model)
+            {
+                <tr>
+                    <td>@persona.IdPersona</td>
+                    <td>
+                        @persona.PrimerNombre @persona.SegundoNombre
+                        @persona.PrimerApellido @persona.SegundoApellido
+                    </td>
+                    <td>@persona.Correo</td>
+                    <td>@persona.Telefono</td>
+                    <td class="text-center">
+                        <form asp-action="Reactivar" method="post" class="d-inline">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="idPersona" value="@persona.IdPersona" />
+                            <button type="submit" class="btn btn-sm btn-success">
+                                <i class="bi bi-person-check"></i> Reactivar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

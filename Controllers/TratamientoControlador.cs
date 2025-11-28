@@ -1,4 +1,4 @@
-﻿using ClosedXML.Excel;   // 📌 Asegúrate de instalar ClosedXML con NuGet
+﻿using ClosedXML.Excel;   
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

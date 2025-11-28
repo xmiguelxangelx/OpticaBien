@@ -1,46 +1,40 @@
+ï»¿using Microsoft.EntityFrameworkCore;
 using Optica1.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// -----------------------------------------------------
-// 1?? Agregar controladores con vistas
-// -----------------------------------------------------
-builder.Services.AddControllersWithViews();
+// CADENA DE CONEXIÃ“N
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// -----------------------------------------------------
-// 2?? Configurar la conexión a la base de datos MySQL
-// -----------------------------------------------------
+// DbContext
 builder.Services.AddDbContext<ProyectoopticaContext>(options =>
     options.UseMySql(
-        builder.Configuration.GetConnectionString("conexion"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("conexion"))
+        connectionString,
+        new MySqlServerVersion(new Version(8, 0, 36))
     )
 );
 
-// -----------------------------------------------------
-// 3?? Configurar autenticación con cookies
-// -----------------------------------------------------
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+// AUTENTICACIÃ“N POR COOKIES
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
     {
-        options.LoginPath = "/Login/Index";              // ?? Página de inicio de sesión
-        options.AccessDeniedPath = "/Login/AccesoDenegado"; // ?? Página si intenta acceder sin permiso
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);  // ?? Expira después de 30 min
-        options.SlidingExpiration = true;                   // ?? Se renueva si el usuario sigue activo
+        options.LoginPath = "/Login/Index";
+        options.AccessDeniedPath = "/Login/AccesoDenegado";
     });
 
-// -----------------------------------------------------
-// 4?? Agregar autorización
-// -----------------------------------------------------
-builder.Services.AddAuthorization();
+// MVC
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// -----------------------------------------------------
-// 5?? Configurar el pipeline de la aplicación
-// -----------------------------------------------------
+// CREAR BD / TABLAS SI NO EXISTEN
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ProyectoopticaContext>();
+    db.Database.EnsureCreated();
+}
+
+// PIPELINE HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -52,13 +46,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// ?? Primero autenticación, luego autorización
-app.UseAuthentication();
+app.UseAuthentication();   // âœ” necesario
 app.UseAuthorization();
 
-// -----------------------------------------------------
-// 6?? Configurar la ruta principal
-// -----------------------------------------------------
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -1,101 +1,139 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<Optica1.Models.Persona>
+
 @{
+    ViewData["Title"] = "Lista de Clientes";
+    var perfiles = ViewBag.Perfiles as List<Optica1.Models.Perfil>;
 }
-@model List<Optica1.Models.Persona>;
 
-<div class="container my-4">
-    <div class="text-center mb-3">
-        <h2 class="fw-bold">Lista de Clientes</h2>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Lista de Clientes</h2>
+
+    <div class="d-flex justify-content-between mb-3">
+        <div>
+            <a asp-controller="PersonasssController1"
+               asp-action="Nuevo"
+               class="btn btn-primary btn-sm">
+                <i class="bi bi-plus-circle"></i> Crear
+            </a>
+
+            <a asp-action="ExportarExcel" class="btn btn-outline-primary ms-2">
+                <i class="bi bi-file-earmark-excel"></i> Exportar Excel
+            </a>
+        </div>
+
+        <div>
+            <a asp-action="Inactivos" class="btn btn-outline-secondary">
+                <i class="bi bi-eye-slash"></i> Ver inactivos
+            </a>
+        </div>
     </div>
 
-    <div class="d-flex justify-content-center mb-3 gap-2">
-        <a asp-controller="PersonasssController1"
-           asp-action="Nuevo"
-           class="btn"
-           style="background-color: #0C65B5; color: white;">
-            <i class="bi bi-plus-circle"></i> Crear
-        </a>
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light text-center">
+            <tr>
+                <th>Cédula</th>
+                <th>Primer nombre</th>
+                <th>Segundo nombre</th>
+                <th>Primer apellido</th>
+                <th>Segundo apellido</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Fecha de nacimiento</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var persona in Model)
+            {
+                // usuario activo (puede ser null si algo está raro)
+                var usuarioActivo = persona.Usuarios?
+                .FirstOrDefault(u => u.Estado == "Activo");
 
-        <a asp-controller="PersonasssController1"
-           asp-action="ExportarExcel"
-           class="btn"
-           style="background-color: #0C65B5; color: white;">
-            <i class="bi bi-file-earmark-excel"></i> Exportar Excel
-        </a>
-    </div>
+                // perfil actual (si existe)
+                int? idPerfilActual = usuarioActivo?
+                .UsuarioPerfils?
+                .FirstOrDefault()?
+                .IdPerfil;
 
-    <!-- Tabla centrada y con sombra -->
-    <div class="table-responsive">
-        <table class="table table-striped table-hover table-bordered text-center align-middle shadow-lg mx-auto" style="max-width: 95%;">
-            <thead class="">
                 <tr>
-                    <th>Cédula</th>
-                    <th>Primer nombre</th>
-                    <th>Segundo nombre</th>
-                    <th>Primer apellido</th>
-                    <th>Segundo apellido</th>
-                    <th>Correo</th>
-                    <th>Teléfono</th>
-                    <th>Dirección</th>
-                    <th>Fecha de nacimiento</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.IdPersona</td>
-                        <td>@item.PrimerNombre</td>
-                        <td>@item.SegundoNombre</td>
-                        <td>@item.PrimerApellido</td>
-                        <td>@item.SegundoApellido</td>
-                        <td>@item.Correo</td>
-                        <td>@item.Telefono</td>
-                        <td>@item.Direccion</td>
-                        <td>@item.FechaNacimiento</td>
-                        <td>
-                            <a asp-controller="PersonasssController1"
-                               asp-action="Editar"
-                               asp-route-id="@item.IdPersona"
-                               class="btn btn-primary btn-sm">
-                                <i class="bi bi-pencil-square"></i>
-                            </a>
+                    <td>@persona.IdPersona</td>
+                    <td>@persona.PrimerNombre</td>
+                    <td>@persona.SegundoNombre</td>
+                    <td>@persona.PrimerApellido</td>
+                    <td>@persona.SegundoApellido</td>
+                    <td>@persona.Correo</td>
+                    <td>@persona.Telefono</td>
+                    <td>@persona.Direccion</td>
+                    <td>@persona.FechaNacimiento?.ToString("dd/MM/yyyy")</td>
 
-                            <a asp-controller="PersonasssController1"
-                               asp-action="Eliminar"
-                               asp-route-id="@item.IdPersona"
-                               onclick="return confirmar()"
-                               class="btn btn-danger btn-sm">
-                                <i class="bi bi-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+                    <!-- Cambio de Rol -->
+                    <td>
+                        @if (usuarioActivo != null && perfiles != null)
+                        {
+                            <form asp-action="CambiarRol" method="post" class="d-flex gap-1">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="idPersona" value="@persona.IdPersona" />
+
+                                <select name="idPerfil" class="form-select form-select-sm">
+                                    @foreach (var perfil in perfiles)
+                                    {
+                                        <option value="@perfil.IdPerfil"
+                                                selected="@(idPerfilActual == perfil.IdPerfil)">
+                                            @perfil.Descripcion
+                                        </option>
+                                    }
+                                </select>
+
+                                <button type="submit" class="btn btn-sm btn-outline-success">
+                                    <i class="bi bi-save"></i>
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="text-muted small">Sin usuario</span>
+                        }
+                    </td>
+
+                    <td class="text-center">
+                        <!-- Editar -->
+                        <a asp-controller="PersonasssController1"
+                           asp-action="Editar"
+                           asp-route-id="@persona.IdPersona"
+                           class="btn btn-primary btn-sm"
+                           title="Editar">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+
+                        <!-- Ver usuario / algo tuyo -->
+                        <a asp-controller="UsuarioController1"
+                           asp-action="RegistrarCliente"
+                           asp-route-id="@persona.IdPersona"
+                           class="btn btn-info btn-sm"
+                           title="Usuario">
+                            <i class="bi bi-person-badge"></i>
+                        </a>
+
+                        <!-- Inactivar (antes eliminar) -->
+                        <a asp-controller="PersonasssController1"
+                           asp-action="Inactivar"
+                           asp-route-id="@persona.IdPersona"
+                           class="btn btn-danger btn-sm"
+                           title="Inactivar">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
 
     <div class="text-center mt-3">
-       <a asp-controller="Admin" asp-action="Index" class="btn btn-secondary">
-            <i class="fas fa-arrow-left"></i> Volver 
+        <a asp-controller="Admin" asp-action="Index" class="btn btn-secondary">
+            ← Volver
         </a>
     </div>
- 
 </div>
-
-
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-@section scripts{
-    <script>
-        function confirmar(){
-
-           return confirmar("estas seguro")
-        }
-    </script>
-}
-

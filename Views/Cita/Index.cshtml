@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Optica1.Models.Citas>
+
+@{
+    ViewData["Title"] = "Mis Citas";
+}
+
+<div class="container mt-4">
+
+    @if (TempData["Mensaje"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Mensaje"]
+        </div>
+    }
+
+    <h2 class="mb-4">Mis Citas</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Motivo</th>
+                <th>Estado</th>
+                <th>Paciente</th>
+                <th>Optometra</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">
+                        No hay citas registradas.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var c in Model)
+                {
+                    <tr>
+                        <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                        <td>@c.Hora.ToString(@"hh\:mm")</td>
+                        <td>@c.Motivo</td>
+                        <td>@c.Estado</td>
+                        <td>@c.IdUsuariopacienteNavigation?.NombreUsuario</td>
+                        <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                        <td>
+                            <a asp-action="Editar" asp-route-id="@c.IdCita"
+                               class="btn btn-sm btn-warning me-1">Editar</a>
+
+                            <a asp-action="Eliminar" asp-route-id="@c.IdCita"
+                               class="btn btn-sm btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    @if (User.IsInRole("cliente") || User.IsInRole("empleado") || User.IsInRole("administrador"))
+    {
+        <a asp-controller="Cita" asp-action="Crear" class="btn btn-primary">
+            Crear nueva cita
+        </a>
+    }
+</div>

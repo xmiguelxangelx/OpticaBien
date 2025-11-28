@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Optica1.Models;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Optica1.Models;
 using System.Threading.Tasks;
 
 namespace Optica1.Controllers
 {
+    [Authorize(Roles = "cliente,empleado,administrador,optometra")]
     public class ProductoController : Controller
     {
         private readonly ProyectoopticaContext _dbContext;

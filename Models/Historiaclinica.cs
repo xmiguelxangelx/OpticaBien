@@ -9,7 +9,7 @@ public partial class Historiaclinica
 
     public DateOnly? FechaCreacion { get; set; }
 
-    public virtual ICollection<Citum> Cita { get; set; } = new List<Citum>();
+   // public virtual ICollection<Citas> Cita { get; set; } = new List<Citas>();
 
     public virtual ICollection<Diagnostico> Diagnosticos { get; set; } = new List<Diagnostico>();
 }

@@ -1,77 +1,89 @@
-﻿@{
+﻿@model Optica1.Models.Persona
+
+@{
     ViewData["Title"] = "Nueva Persona";
 }
-@model Optica1.Models.Persona
-<div class="container my-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6 p-4 shadow-lg rounded-4 bg-light">
-            <h2 class="text-center mb-4 fw-bold" style="color: #0C65B5;">Nueva Persona</h2>
 
-            <form asp-controller="PersonasssController1" asp-action="Nuevo" method="post">
-                <div class="mb-3">
-                    <label class="form-label fw-semibold">Cédula</label>
-                    <input asp-for="IdPersona" type="number" class="form-control" placeholder="Ingrese la cédula" required />
-                </div>
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-primary fw-bold">Nueva Persona</h2>
 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="PrimerNombre" class="form-label fw-semibold">Primer Nombre</label>
-                        <input asp-for="PrimerNombre" type="text" class="form-control" placeholder="Ej. Juan" />
-                    </div>
+    <form asp-action="Nuevo" method="post">
 
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="SegundoNombre" class="form-label fw-semibold">Segundo Nombre</label>
-                        <input asp-for="SegundoNombre" type="text" class="form-control" placeholder="Ej. Carlos" />
-                    </div>
-                </div>
+        <!-- Datos Personales -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Cédula</label>
+                <input asp-for="IdPersona" class="form-control" placeholder="Ingrese la cédula" required />
+            </div>
 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="PrimerApellido" class="form-label fw-semibold">Primer Apellido</label>
-                        <input asp-for="PrimerApellido" type="text" class="form-control" placeholder="Ej. Gómez" />
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="SegundoApellido" class="form-label fw-semibold">Segundo Apellido</label>
-                        <input asp-for="SegundoApellido" type="text" class="form-control" placeholder="Ej. Ramírez" />
-                    </div>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Correo" class="form-label fw-semibold">Correo Electrónico</label>
-                    <input asp-for="Correo" type="email" class="form-control" placeholder="ejemplo@correo.com" />
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Telefono" class="form-label fw-semibold">Teléfono</label>
-                    <input asp-for="Telefono" type="number" class="form-control" placeholder="Ingrese el número" />
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Direccion" class="form-label fw-semibold">Dirección</label>
-                    <input asp-for="Direccion" type="text" class="form-control" placeholder="Ej. Calle 123 #45-67" />
-                </div>
-
-                <div class="mb-4">
-                    <label asp-for="FechaNacimiento" class="form-label fw-semibold">Fecha de Nacimiento</label>
-                    <input asp-for="FechaNacimiento" type="date" class="form-control" />
-                </div>
-
-                <div class="d-flex justify-content-between">
-                    <button type="submit" class="btn" style="background-color: #0C65B5; color: white;">
-                        <i class="bi bi-person-check"></i> Guardar Persona
-                    </button>
-                    <a asp-controller="PersonasssController1" asp-action="Lista" class="btn btn-secondary">
-                        <i class="bi bi-arrow-left"></i> Cancelar
-                    </a>
-                </div>
-            </form>
+            <div class="col-md-6">
+                <label class="form-label">Correo Electrónico</label>
+                <input asp-for="Correo" class="form-control" placeholder="ejemplo@correo.com" required />
+            </div>
         </div>
-    </div>
-</div>
 
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Primer Nombre</label>
+                <input asp-for="PrimerNombre" class="form-control" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Segundo Nombre</label>
+                <input asp-for="SegundoNombre" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Primer Apellido</label>
+                <input asp-for="PrimerApellido" class="form-control" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Segundo Apellido</label>
+                <input asp-for="SegundoApellido" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Teléfono</label>
+                <input asp-for="Telefono" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Dirección</label>
+                <input asp-for="Direccion" class="form-control" />
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input asp-for="FechaNacimiento" class="form-control" type="date" />
+        </div>
+
+
+        <!-- 🔥 CAMPOS DE USUARIO -->
+        <h4 class="mt-4 text-secondary">Datos de Usuario</h4>
+
+        <div class="mb-3">
+            <label class="form-label">Nombre de usuario</label>
+            <input name="nombreUsuario" class="form-control" placeholder="usuario123" required />
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label">Contraseña</label>
+            <input name="clave" type="password" class="form-control" placeholder="******" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-save"></i> Guardar Persona
+        </button>
+
+        <a asp-action="Lista" class="btn btn-secondary ms-2">
+            <i class="bi bi-arrow-left"></i> Cancelar
+        </a>
+
+    </form>
+</div>

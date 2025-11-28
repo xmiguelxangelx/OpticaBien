@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Optica1.Controllers
 {
-    [Authorize(Roles = "administrador")]
+    [Authorize(Roles = "administrador,empleado")]
     public class ProvedorController1 : Controller
     {
         private readonly ProyectoopticaContext _dbContext;

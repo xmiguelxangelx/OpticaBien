@@ -13,9 +13,11 @@ public partial class Usuario
 
     public long? IdPersona { get; set; }
 
-    public virtual ICollection<Citum> CitumIdUsuarioempleadoNavigations { get; set; } = new List<Citum>();
+    public string Estado { get; set; } = "Activo";
 
-    public virtual ICollection<Citum> CitumIdUsuariopacienteNavigations { get; set; } = new List<Citum>();
+    public virtual ICollection<Citas> CitasIdUsuarioempleadoNavigations { get; set; } = new List<Citas>();
+
+    public virtual ICollection<Citas> CitasIdUsuariopacienteNavigations { get; set; } = new List<Citas>();
 
     public virtual Persona? IdPersonaNavigation { get; set; }
 

@@ -31,7 +31,7 @@ namespace Optica1.Controllers
             {
                 // 🔹 Verificar usuario y contraseña
                 var usuario = _context.Usuarios
-                    .FirstOrDefault(u => u.NombreUsuario == model.NombreUsuario && u.Clave == model.Clave);
+                    .FirstOrDefault(u => u.NombreUsuario == model.NombreUsuario && u.Clave == model.Clave && u.Estado == "Activo");
 
                 if (usuario != null)
                 {
