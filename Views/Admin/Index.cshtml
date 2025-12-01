@@ -1,10 +1,8 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Panel de Administración";
 }
 
 <div class="container mt-5">
-
 
     <div class="text-center mb-5">
         <h2 class="fw-bold display-5 text-primary">⚙️ Administración de Óptica</h2>
@@ -13,6 +11,7 @@
 
     <div class="row g-5 justify-content-center">
 
+        <!-- Personas -->
         <div class="col-md-6 col-lg-6">
             <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
                 <div class="card-body d-flex align-items-center p-4">
@@ -28,11 +27,7 @@
             </div>
         </div>
 
-
-
-       
-
-
+        <!-- Usuarios y Roles -->
         <div class="col-md-6 col-lg-6">
             <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
                 <div class="card-body d-flex align-items-center p-4">
@@ -48,10 +43,7 @@
             </div>
         </div>
 
-
-        
-
-      
+        <!-- Proveedores -->
         <div class="col-md-6 col-lg-6">
             <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
                 <div class="card-body d-flex align-items-center p-4">
@@ -67,7 +59,7 @@
             </div>
         </div>
 
-        
+        <!-- Tratamientos -->
         <div class="col-md-6 col-lg-6">
             <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
                 <div class="card-body d-flex align-items-center p-4">
@@ -83,6 +75,7 @@
             </div>
         </div>
 
+        <!-- Citas -->
         <div class="col-md-6 col-lg-6">
             <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
                 <div class="card-body d-flex align-items-center p-4">
@@ -100,42 +93,99 @@
             </div>
         </div>
 
+        <!-- Compras -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
+                <div class="card-body d-flex align-items-center p-4">
+                    <i class="bi bi-bag-check fs-1 text-danger me-4"></i>
+                    <div>
+                        <h5 class="card-title fw-bold mb-1">Gestión de Compras</h5>
+                        <p class="card-text text-muted small">Registro de compras de productos y actualización de inventario.</p>
+                        <a asp-controller="Compra" asp-action="Index" class="btn btn-outline-danger btn-sm mt-1">
+                            <i class="bi bi-arrow-right"></i> Ir a Compras
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventas -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
+                <div class="card-body d-flex align-items-center p-4">
+                    <i class="bi bi-cash-stack fs-1 text-success me-4"></i>
+                    <div>
+                        <h5 class="card-title fw-bold mb-1">Gestión de Ventas</h5>
+                        <p class="card-text text-muted small">Registro de ventas a clientes, abonos y control de productos vendidos.</p>
+                        <a asp-controller="Venta" asp-action="Index" class="btn btn-outline-success btn-sm mt-1">
+                            <i class="bi bi-arrow-right"></i> Ir a Ventas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
+                <div class="card-body d-flex align-items-center p-4">
+                    <i class="bi bi-box-seam fs-1 text-info me-4"></i>
+                    <div>
+                        <h5 class="card-title fw-bold mb-1">Gestión de Productos</h5>
+                        <p class="card-text text-muted small">Administración del catálogo e inventario de productos.</p>
+                        <a asp-controller="Producto" asp-action="Index" class="btn btn-outline-info btn-sm mt-1">
+                            <i class="bi bi-arrow-right"></i> Ir a Productos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reportes  -->
+        <div class="col-md-6 col-lg-6">
+            <div class="card shadow-sm border-0 rounded-4 h-100 card-minimal-hover">
+                <div class="card-body d-flex align-items-center p-4">
+                    <i class="bi bi-bar-chart-line fs-1 text-danger me-4"></i>
+                    <div>
+                        <h5 class="card-title fw-bold mb-1">Reportes</h5>
+                        <p class="card-text text-muted small">
+                            Reporte detallado de ventas con exportación a Excel.
+                        </p>
+                        <a asp-controller="Reportes" asp-action="Ventas" class="btn btn-outline-danger btn-sm mt-1">
+                            <i class="bi bi-arrow-right"></i> Ver reportes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-
+        <!-- Espaciador opcional para mantener rejilla simétrica en pantallas grandes -->
         <div class="col-md-6 col-lg-6 d-none d-lg-block"></div>
-  
 
     </div>
 
-    
     <div class="text-center mt-5 pt-4 border-top">
         <button type="button" class="btn btn-outline-dark rounded-pill px-4" onclick="window.history.back()">
             <i class="bi bi-arrow-left-circle"></i> Volver a la página anterior
         </button>
     </div>
 
-
-
-    <a asp-controller="Errorsito405" asp-action="Index" class="btn btn-outline-danger btn-sm d-inline-flex align-items-center">
+    <a asp-controller="Errorsito405" asp-action="Index" class="btn btn-outline-danger btn-sm d-inline-flex align-items-center mt-3">
         <i class="bi bi-exclamation-triangle me-1"></i> Error
     </a>
 
 </div>
 
-
 <style>
-    
     .card-minimal-hover {
-        
         border: 1px solid #e0e0e0;
         transition: all 0.3s ease;
     }
 
         .card-minimal-hover:hover {
-           
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
-            border-color: var(--bs-primary); 
+            border-color: var(--bs-primary);
             transform: translateY(-2px);
         }
 </style>

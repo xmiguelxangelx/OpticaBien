@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Optica1.Models.VentaPago>
+
+@{
+    var venta = ViewBag.Venta as Optica1.Models.Ventum;
+    var totalAbonado = (float)ViewBag.TotalAbonado;
+    float total = venta.Total ?? 0;
+    float saldo = total - totalAbonado;
+
+    ViewData["Title"] = "Pagos de venta";
+}
+
+<h2 class="mt-3">Pagos de la venta #@venta.IdVenta</h2>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<div class="card p-3 mb-4 shadow-sm">
+    <h5>Cliente: @venta.IdUsuariopacienteNavigation?.NombreUsuario</h5>
+    <h6 class="text-muted">Empleado: @venta.IdUsuarioempleadoNavigation?.NombreUsuario</h6>
+
+    <hr />
+
+    <p><strong>Total venta:</strong> @total.ToString("C2")</p>
+    <p><strong>Total abonado:</strong> @totalAbonado.ToString("C2")</p>
+    <p><strong>Saldo pendiente:</strong> <span class="text-primary">@saldo.ToString("C2")</span></p>
+
+    <a asp-action="Crear"
+       asp-route-idVenta="@venta.IdVenta"
+       class="btn btn-success mt-2">
+        Registrar nuevo abono
+    </a>
+
+    <a asp-controller="Venta"
+       asp-action="Index"
+       class="btn btn-outline-secondary mt-2 ms-2">
+        Volver a ventas
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-light">
+        <tr>
+            <th>Monto</th>
+            <th>Medio de pago</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Monto?.ToString("C2")</td>
+                <td>@p.IdMedioDePagoNavigation?.Descripcion</td>
+                <td>@p.FechaPago?.ToString("yyyy-MM-dd")</td>
+            </tr>
+        }
+    </tbody>
+</table>

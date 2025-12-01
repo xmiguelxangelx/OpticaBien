@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Optica1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f89689e11d44364043512f028eae264fc52ee79f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4898f7875f4f2ebb6215bed3e5eb6e64dae85db6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Optica1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Optica1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

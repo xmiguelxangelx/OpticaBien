@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Optica1.Models.Citas>
+
+@{
+    ViewData["Title"] = "Citas inactivas";
+}
+
+<h2 class="mt-4">Citas inactivas</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["Mensaje"]</div>
+}
+
+<a asp-action="Index" class="btn btn-outline-primary mb-3">
+    Volver a citas activas
+</a>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Paciente</th>
+            <th>Optómetra</th>
+            <th>Motivo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Fecha.ToShortDateString()</td>
+                <td>@item.Hora</td>
+                <td>@item.IdUsuariopacienteNavigation?.NombreUsuario</td>
+                <td>@item.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                <td>@item.Motivo</td>
+                <td>
+                    <form asp-action="Restaurar" asp-route-id="@item.IdCita" method="post" class="d-inline">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-success"
+                                onclick="return confirm('¿Restaurar esta cita?');">
+                            Restaurar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

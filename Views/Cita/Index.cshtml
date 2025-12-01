@@ -13,6 +13,16 @@
         </div>
     }
 
+    
+
+
+    @if (User.IsInRole("administrador"))
+    {
+        <a asp-action="Inactivas" class="btn btn-secondary mb-3">
+            Ver Citas Inactivas
+        </a>
+    }
+
     <h2 class="mb-4">Mis Citas</h2>
 
     <table class="table table-hover">

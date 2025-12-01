@@ -225,15 +225,57 @@ namespace Optica1.Models
                 entity.Property(e => e.IdProducto)
                     .HasColumnType("int(11)")
                     .HasColumnName("id_producto");
-                entity.Property(e => e.FechaActualizacion).HasColumnName("fecha_actualizacion");
+
+                entity.Property(e => e.FechaActualizacion)
+                    .HasColumnName("fecha_actualizacion");
+
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(45)
                     .HasColumnName("nombre");
-                entity.Property(e => e.Precio).HasColumnName("precio");
+
+                entity.Property(e => e.Precio)
+                    .HasColumnName("precio");
+
                 entity.Property(e => e.Stock)
                     .HasColumnType("int(11)")
                     .HasColumnName("stock");
+
+                // NUEVOS CAMPOS
+                entity.Property(e => e.Tipo)
+                    .HasMaxLength(45)
+                    .HasColumnName("tipo");
+
+                entity.Property(e => e.Marca)
+                    .HasMaxLength(45)
+                    .HasColumnName("marca");
+
+                entity.Property(e => e.Descripcion)
+                    .HasColumnType("text")
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.IdProveedorNit)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("id_proveedor_nit");
+
+                entity.Property(e => e.StockMinimo)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("stock_minimo");
+
+                entity.Property(e => e.Estado)
+                    .HasMaxLength(20)
+                    .HasColumnName("estado");
+
+                // 👇 IMPORTANTE: ignoramos la propiedad sombra con el nombre mal escrito
+                entity.Ignore("IdProvedorNitNavigationIdProvedorNit");
+
+                // Relación con proveedor principal
+                entity.HasOne(d => d.IdProveedorNitNavigation)
+                    .WithMany(p => p.Productos)
+                    .HasForeignKey(d => d.IdProveedorNit)
+                    .HasConstraintName("fk_producto_proveedor");
             });
+
+
 
             // ================= ProductoCompra =================
             modelBuilder.Entity<ProductoCompra>(entity =>
@@ -460,12 +502,21 @@ namespace Optica1.Models
                 entity.Property(e => e.IdVentapago)
                     .HasColumnType("int(11)")
                     .HasColumnName("id_ventapago");
+
                 entity.Property(e => e.IdMedioDePago)
                     .HasColumnType("int(11)")
                     .HasColumnName("id_medio_de_pago");
+
                 entity.Property(e => e.IdVenta)
                     .HasColumnType("int(11)")
                     .HasColumnName("id_venta");
+
+                // 👇 Nuevas columnas
+                entity.Property(e => e.Monto)
+                    .HasColumnName("monto");
+
+                entity.Property(e => e.FechaPago)
+                    .HasColumnName("fecha_pago");
 
                 entity.HasOne(d => d.IdMedioDePagoNavigation)
                     .WithMany(p => p.VentaPagos)
@@ -477,6 +528,7 @@ namespace Optica1.Models
                     .HasForeignKey(d => d.IdVenta)
                     .HasConstraintName("fk_vp_idventa");
             });
+
 
             // ================= Ventum (Venta) =================
             modelBuilder.Entity<Ventum>(entity =>

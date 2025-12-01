@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Registrar compra";
+}
+
+<h2 class="mt-3">Registrar nueva compra</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<form asp-action="Crear" method="post">
+    <div class="mb-3">
+        <label class="form-label">Fecha de compra</label>
+        <input type="date" name="fechaCompra" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Proveedor</label>
+        <select name="proveedorId" class="form-control" asp-items="ViewBag.Proveedores" required>
+            <option value="">-- Seleccione un proveedor --</option>
+        </select>
+    </div>
+
+    <hr />
+
+    <h4>Productos</h4>
+
+    <div id="productos-lista">
+        <div class="producto-item mb-3">
+            <select name="productoId" class="form-control mb-2" asp-items="ViewBag.Productos">
+                <option value="">Seleccione un producto</option>
+            </select>
+
+            <input name="cantidad" class="form-control" type="number" min="1"
+                   placeholder="Cantidad" />
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-secondary" onclick="agregarProducto()">Agregar otro producto</button>
+
+    <br /><br />
+
+    <button type="submit" class="btn btn-success">Guardar compra</button>
+</form>
+
+<script>
+    function agregarProducto() {
+        const container = document.getElementById("productos-lista");
+        const nuevo = container.children[0].cloneNode(true);
+        container.appendChild(nuevo);
+    }
+</script>

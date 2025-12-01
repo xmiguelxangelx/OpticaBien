@@ -11,6 +11,11 @@ public partial class VentaPago
 
     public int? IdVenta { get; set; }
 
+    
+    public float? Monto { get; set; }
+
+    public DateOnly? FechaPago { get; set; }
+
     public virtual MedioDePago? IdMedioDePagoNavigation { get; set; }
 
     public virtual Ventum? IdVentaNavigation { get; set; }

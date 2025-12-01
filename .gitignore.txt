@@ -1,0 +1,11 @@
+# Carpeta de Visual Studio
+.vs/
+
+# Compilación
+bin/
+obj/
+
+# Archivos de usuario de VS
+*.user
+*.suo
+*.userprefs
