@@ -1,0 +1,92 @@
+﻿@model Optica1.Models.Historiaclinica
+
+@{
+    ViewData["Title"] = "Editar historia clinica";
+}
+
+<h2>Editar historia clínica</h2>
+
+<form asp-action="Crear" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label asp-for="FechaCreacion" class="form-label">Fecha</label>
+            <input asp-for="FechaCreacion" class="form-control" type="date" />
+            <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="IdUsuarioPaciente" class="form-label">Paciente</label>
+            <select asp-for="IdUsuarioPaciente"
+                    asp-items="(SelectList)ViewBag.Pacientes"
+                    class="form-control">
+                <option value="">-- Seleccione paciente --</option>
+            </select>
+            <span asp-validation-for="IdUsuarioPaciente" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="IdUsuarioOptometra" class="form-label">Optómetra</label>
+            <select asp-for="IdUsuarioOptometra"
+                    asp-items="(SelectList)ViewBag.Optometras"
+                    class="form-control">
+                <option value="">-- Seleccione optómetra --</option>
+            </select>
+            <span asp-validation-for="IdUsuarioOptometra" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MotivoConsulta" class="form-label">Motivo de consulta</label>
+        <textarea asp-for="MotivoConsulta" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="MotivoConsulta" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Antecedentes" class="form-label">Antecedentes</label>
+        <textarea asp-for="Antecedentes" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Antecedentes" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="AgudezaVisualOd" class="form-label">Agudeza visual OD</label>
+            <input asp-for="AgudezaVisualOd" class="form-control" />
+            <span asp-validation-for="AgudezaVisualOd" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="AgudezaVisualOi" class="form-label">Agudeza visual OI</label>
+            <input asp-for="AgudezaVisualOi" class="form-control" />
+            <span asp-validation-for="AgudezaVisualOi" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="RxFinalOd" class="form-label">Rx final OD</label>
+            <input asp-for="RxFinalOd" class="form-control" />
+            <span asp-validation-for="RxFinalOd" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="RxFinalOi" class="form-label">Rx final OI</label>
+            <input asp-for="RxFinalOi" class="form-control" />
+            <span asp-validation-for="RxFinalOi" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Observaciones" class="form-label">Observaciones / Recomendaciones</label>
+        <textarea asp-for="Observaciones" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

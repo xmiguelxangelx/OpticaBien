@@ -1,0 +1,35 @@
+﻿@model Optica1.Models.Historiaclinica
+
+@{
+    ViewData["Title"] = "Inactivar historia clínica";
+}
+
+<div class="mt-3 mb-3">
+    <h2>Inactivar historia clínica</h2>
+</div>
+
+<div class="alert alert-warning">
+    <p>
+        ¿Está seguro que desea <strong>inactivar</strong> esta historia clínica?
+        No se eliminará de la base de datos, solo dejará de aparecer en el listado principal.
+    </p>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.IdHistoriaclinica</p>
+        <p><strong>Fecha:</strong> @(Model.FechaCreacion?.ToString("yyyy-MM-dd") ?? "")</p>
+        <p><strong>Motivo de consulta:</strong> @Model.MotivoConsulta</p>
+    </div>
+</div>
+
+<form asp-action="Eliminar" method="post">
+    <input type="hidden" asp-for="IdHistoriaclinica" />
+
+    <button type="submit" class="btn btn-danger">
+        Sí, inactivar
+    </button>
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+</form>

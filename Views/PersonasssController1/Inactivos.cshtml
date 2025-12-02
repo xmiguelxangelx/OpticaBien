@@ -35,11 +35,30 @@
                     <td>@persona.Correo</td>
                     <td>@persona.Telefono</td>
                     <td class="text-center">
-                        <form asp-action="Reactivar" method="post" class="d-inline">
+                        <!-- Reactivar -->
+                        <form asp-action="Reactivar"
+                              asp-route-idPersona="@persona.IdPersona"
+                              method="post"
+                              class="d-inline">
                             @Html.AntiForgeryToken()
-                            <input type="hidden" name="idPersona" value="@persona.IdPersona" />
-                            <button type="submit" class="btn btn-sm btn-success">
-                                <i class="bi bi-person-check"></i> Reactivar
+                            <button type="submit"
+                                    class="btn btn-success btn-sm"
+                                    title="Reactivar">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+                        </form>
+
+                        <!-- Eliminar definitivamente -->
+                        <form asp-action="EliminarDefinitivo"
+                              asp-route-idPersona="@persona.IdPersona"
+                              method="post"
+                              class="d-inline"
+                              onsubmit="return confirm('¿Seguro que deseas eliminar definitivamente este cliente? Esta acción no se puede deshacer.');">
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="btn btn-danger btn-sm"
+                                    title="Eliminar definitivamente">
+                                <i class="bi bi-trash-fill"></i>
                             </button>
                         </form>
                     </td>

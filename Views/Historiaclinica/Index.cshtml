@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Optica1.Models.Historiaclinica>
+@using System.Collections.Generic
+@using Optica1.Models
+
+@{
+    ViewData["Title"] = "Historias clínicas";
+    var personasDict = ViewBag.PersonasPorUsuario as IDictionary<int, Persona>;
+}
+
+<div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+    <h2 class="mb-0">Historias clínicas</h2>
+    <div>
+        <a asp-action="Inactivas" class="btn btn-outline-secondary me-2">Ver inactivas</a>
+        <a asp-action="Crear" class="btn btn-primary">Nueva historia clínica</a>
+    </div>
+</div>
+
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mensaje"]
+    </div>
+}
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Documento paciente</th>
+            <th>Paciente</th>
+            <th>Optómetra</th>
+            <th>Motivo (resumen)</th>
+            <th style="width:180px;">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var h in Model)
+        {
+            Persona pacientePersona = null;
+            Persona optometraPersona = null;
+
+            if (personasDict != null && h.IdUsuarioPaciente.HasValue &&
+            personasDict.ContainsKey(h.IdUsuarioPaciente.Value))
+            {
+                pacientePersona = personasDict[h.IdUsuarioPaciente.Value];
+            }
+
+            if (personasDict != null && h.IdUsuarioOptometra.HasValue &&
+            personasDict.ContainsKey(h.IdUsuarioOptometra.Value))
+            {
+                optometraPersona = personasDict[h.IdUsuarioOptometra.Value];
+            }
+
+            string pacienteNombre = pacientePersona == null
+            ? ""
+            : string.Join(" ",
+            new[]
+            {
+                pacientePersona.PrimerNombre,
+                pacientePersona.SegundoNombre,
+                pacientePersona.PrimerApellido,
+                pacientePersona.SegundoApellido
+            }.Where(s => !string.IsNullOrWhiteSpace(s)));
+
+            string optometraNombre = optometraPersona == null
+            ? ""
+            : string.Join(" ",
+            new[]
+            {
+                optometraPersona.PrimerNombre,
+                optometraPersona.SegundoNombre,
+                optometraPersona.PrimerApellido,
+                optometraPersona.SegundoApellido
+            }.Where(s => !string.IsNullOrWhiteSpace(s)));
+
+            string docPaciente = pacientePersona?.IdPersona.ToString() ?? "";
+
+            string motivoResumen = string.IsNullOrWhiteSpace(h.MotivoConsulta)
+            ? ""
+            : (h.MotivoConsulta.Length > 40
+            ? h.MotivoConsulta.Substring(0, 40) + "..."
+            : h.MotivoConsulta);
+
+            <tr>
+                <td>@(h.FechaCreacion?.ToString("yyyy-MM-dd") ?? "")</td>
+                <td>@docPaciente</td>
+                <td>@pacienteNombre</td>
+                <td>@optometraNombre</td>
+                <td>@motivoResumen</td>
+                <td>
+                    <a asp-action="Detalles" asp-route-id="@h.IdHistoriaclinica" class="btn btn-sm btn-info">
+                        Detalles
+                    </a>
+                    <a asp-action="Editar" asp-route-id="@h.IdHistoriaclinica" class="btn btn-sm btn-warning">
+                        Editar
+                    </a>
+                    <a asp-action="Eliminar" asp-route-id="@h.IdHistoriaclinica" class="btn btn-sm btn-danger">
+                        Eliminar
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,12 +1,22 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = Optica1
 build_property.RootNamespace = Optica1
 build_property.ProjectDir = E:\Documents\Programacion Software\Diseño WEB\WEB.NET_II\OpticaBien\
@@ -60,6 +70,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXJyb3JzaXRvNDA1XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Inactivas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXEluYWN0aXZhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Historiaclinica/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFjbGluaWNhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Home/Error404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Optometra/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0b21ldHJhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/PerfilControlador/editar.cshtml]

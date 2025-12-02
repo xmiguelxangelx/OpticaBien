@@ -275,6 +275,28 @@ namespace Optical.Controllers
                     ModelState.AddModelError(string.Empty,
                         "El horario permitido para citas es entre 10:00 AM y 7:00 PM, en intervalos de 30 minutos.");
                 }
+                // ⛔ No permitir fechas en el pasado
+                if (model.Fecha.Date < DateTime.Today)
+                {
+                    ModelState.AddModelError("Fecha", "No puedes agendar citas en fechas que ya pasaron.");
+                    await CargarCombosAsync(model.IdUsuarioempleado);
+                    return View(model);
+                }
+
+
+                // ⛔ Si la cita es para hoy, no permitir horas pasadas
+                if (model.Fecha.Date == DateTime.Today)
+                {
+                    var ahora = DateTime.Now.TimeOfDay;
+                    if (model.Hora < ahora)
+                    {
+                        ModelState.AddModelError("Hora", "No puedes agendar una cita en una hora que ya pasó.");
+                        await CargarCombosAsync(model.IdUsuarioempleado);
+                        return View(model);
+                    }
+                }
+
+
             }
 
             // Motivo obligatorio

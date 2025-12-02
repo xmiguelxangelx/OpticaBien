@@ -23,20 +23,53 @@ namespace Optica1.Controllers
         // LISTA PRINCIPAL → SOLO PERSONAS CON USUARIO ACTIVO
         // ==========================================
         [HttpGet]
-        public async Task<IActionResult> Lista()
+        public async Task<IActionResult> Lista(string buscar)
         {
-            var personas = await _context.Personas
+            // 1️⃣ Consulta base: solo personas con usuarios activos
+            var query = _context.Personas
                 .Include(p => p.Usuarios)
                     .ThenInclude(u => u.UsuarioPerfils)
                         .ThenInclude(up => up.IdPerfilNavigation)
                 .Where(p => p.Usuarios.Any(u => u.Estado == "Activo"))
-                .ToListAsync();
+                .AsQueryable();
 
-            // Todos los perfiles para armar el combo de roles en la vista
+            // 2️⃣ Si se escribió algo en el cuadro de búsqueda, filtramos
+            if (!string.IsNullOrWhiteSpace(buscar))
+            {
+                buscar = buscar.Trim().ToLower();
+
+                query = query.Where(p =>
+                    // Documento
+                    p.IdPersona.ToString().Contains(buscar) ||
+
+                    // Nombre completo
+                    (
+                        (p.PrimerNombre ?? "") + " " +
+                        (p.SegundoNombre ?? "") + " " +
+                        (p.PrimerApellido ?? "") + " " +
+                        (p.SegundoApellido ?? "")
+                    ).ToLower().Contains(buscar) ||
+
+                    // Correo
+                    (p.Correo ?? "").ToLower().Contains(buscar) ||
+
+                    // Nombre de usuario (login)
+                    p.Usuarios.Any(u => u.NombreUsuario.ToLower().Contains(buscar))
+                );
+            }
+
+            // 3️⃣ Guardamos el texto buscado para que la vista lo recuerde
+            ViewData["BuscarActual"] = buscar;
+
+            // 4️⃣ Ejecutamos la consulta
+            var personas = await query.ToListAsync();
+
+            // 5️⃣ Perfiles para el combo de roles
             ViewBag.Perfiles = await _context.Perfiles.ToListAsync();
 
             return View(personas);
         }
+
 
         // ==========================================
         // LISTA DE PERSONAS INACTIVAS
@@ -216,6 +249,60 @@ namespace Optica1.Controllers
 
             await _context.SaveChangesAsync();
 
+            return RedirectToAction(nameof(Inactivos));
+        }
+
+        // ==========================================
+        // ELIMINAR DEFINITIVAMENTE PERSONA INACTIVA
+        // ==========================================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EliminarDefinitivo(long idPersona)
+        {
+            var persona = await _context.Personas
+                .Include(p => p.Usuarios)
+                    .ThenInclude(u => u.UsuarioPerfils)
+                .FirstOrDefaultAsync(p => p.IdPersona == idPersona);
+
+            if (persona == null)
+                return NotFound();
+
+            // Ids de usuario asociados a esta persona
+            var idsUsuarios = persona.Usuarios
+                .Select(u => u.IdUsuario)
+                .ToList();
+
+            // 1️⃣ Validar que NO tenga citas ni como empleado (optómetra) ni como paciente
+            var tieneCitas = await _context.Citas.AnyAsync(c =>
+                (c.IdUsuarioempleado.HasValue && idsUsuarios.Contains(c.IdUsuarioempleado.Value)) ||
+                (c.IdUsuariopaciente.HasValue && idsUsuarios.Contains(c.IdUsuariopaciente.Value))
+            );
+
+            // 2️⃣ Validar que NO tenga ventas asociadas (igual patrón)
+            var tieneVentas = await _context.Venta.AnyAsync(v =>
+                (v.IdUsuarioempleado.HasValue && idsUsuarios.Contains(v.IdUsuarioempleado.Value)) ||
+                (v.IdUsuariopaciente.HasValue && idsUsuarios.Contains(v.IdUsuariopaciente.Value))
+            );
+
+            if (tieneCitas || tieneVentas)
+            {
+                TempData["Error"] = "No se puede eliminar definitivamente este cliente porque tiene citas o ventas asociadas. Solo puede quedar inactivo.";
+                return RedirectToAction(nameof(Inactivos));
+            }
+
+            // 3️⃣ Eliminar roles y usuarios asociados
+            foreach (var usuario in persona.Usuarios.ToList())
+            {
+                _context.UsuarioPerfils.RemoveRange(usuario.UsuarioPerfils);
+                _context.Usuarios.Remove(usuario);
+            }
+
+            // 4️⃣ Eliminar persona
+            _context.Personas.Remove(persona);
+
+            await _context.SaveChangesAsync();
+
+            TempData["Mensaje"] = "El cliente ha sido eliminado definitivamente.";
             return RedirectToAction(nameof(Inactivos));
         }
 

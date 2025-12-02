@@ -1,0 +1,116 @@
+﻿@model Optica1.Models.Historiaclinica
+
+@{
+    ViewData["Title"] = "Historia clínica";
+    var pacienteNombre = ViewBag.PacienteNombre as string ?? "";
+    var pacienteDocumento = ViewBag.PacienteDocumento;
+    var pacienteTelefono = ViewBag.PacienteTelefono as string ?? "";
+    var pacienteCorreo = ViewBag.PacienteCorreo as string ?? "";
+    var optometraNombre = ViewBag.OptometraNombre as string ?? "";
+}
+
+<div class="card mt-3">
+    <div class="card-header d-flex justify-content-between">
+        <div>
+            <h4 class="mb-0">Historia clínica – Óptica Lincoln's</h4>
+            <small class="text-muted">
+                Fecha: @(Model.FechaCreacion?.ToString("yyyy-MM-dd") ?? "")
+            </small>
+        </div>
+        <div>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.print()">
+                Imprimir
+            </button>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <!-- DATOS DEL PACIENTE -->
+        <h5 class="mb-3">Datos del paciente</h5>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <strong>Nombre:</strong><br />
+                @pacienteNombre
+            </div>
+            <div class="col-md-4">
+                <strong>Documento:</strong><br />
+                @pacienteDocumento
+            </div>
+            <div class="col-md-4">
+                <strong>Teléfono / Correo:</strong><br />
+                @pacienteTelefono<br />
+                @pacienteCorreo
+            </div>
+        </div>
+
+        <!-- DATOS DEL PROFESIONAL -->
+        <h5 class="mb-3">Profesional</h5>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Optómetra:</strong><br />
+                @optometraNombre
+            </div>
+        </div>
+
+        <!-- MOTIVO Y ANTECEDENTES -->
+        <h5 class="mb-3">Motivo de consulta</h5>
+        <p>@Model.MotivoConsulta</p>
+
+        <h5 class="mb-3">Antecedentes</h5>
+        <p>@Model.Antecedentes</p>
+
+        <!-- EXAMEN VISUAL -->
+        <h5 class="mb-3">Examen visual</h5>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Agudeza visual OD:</strong><br />
+                @Model.AgudezaVisualOd
+            </div>
+            <div class="col-md-6">
+                <strong>Agudeza visual OI:</strong><br />
+                @Model.AgudezaVisualOi
+            </div>
+        </div>
+
+        <!-- RX FINAL -->
+        <h5 class="mb-3">Rx final</h5>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>OD:</strong><br />
+                @Model.RxFinalOd
+            </div>
+            <div class="col-md-6">
+                <strong>OI:</strong><br />
+                @Model.RxFinalOi
+            </div>
+        </div>
+
+        <!-- OBSERVACIONES -->
+        <h5 class="mb-3">Observaciones / Recomendaciones</h5>
+        <p>@Model.Observaciones</p>
+    </div>
+
+    <div class="card-footer text-end">
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    </div>
+</div>
+
+<style>
+    @@media print {
+        nav, header, footer, .btn, .navbar, .sidebar
+
+    {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    .card {
+        border: none;
+        box-shadow: none;
+    }
+
+    }
+</style>
