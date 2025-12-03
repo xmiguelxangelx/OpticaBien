@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Optica1.Controllers
 {
-    [Authorize(Roles = "administrador")]
+    [Authorize(Roles = "administrador,empleado")]
     public class VentaController : Controller
     {
         private readonly ProyectoopticaContext _context;
@@ -31,20 +31,45 @@ namespace Optica1.Controllers
         }
 
         // ============================
-        // LISTAR VENTAS
+        // LISTADO DE VENTAS (CON FILTRO POR ID)
         // ============================
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(int? idBusqueda)
         {
-            // Traer ventas con cliente, empleado y productos
-            var ventas = await _context.Venta
+            var usuarioActual = await GetUsuarioActualAsync();
+
+            // Base: todas las ventas con sus relaciones
+            var query = _context.Venta
                 .Include(v => v.IdUsuariopacienteNavigation)
+                    .ThenInclude(u => u.IdPersonaNavigation)
                 .Include(v => v.IdUsuarioempleadoNavigation)
                 .Include(v => v.ProductoVenta)
                     .ThenInclude(pv => pv.IdProductoNavigation)
+                .AsQueryable();
+
+            // Si es empleado, filtramos solo sus ventas
+            if (User.IsInRole("empleado") && usuarioActual != null)
+            {
+                query = query.Where(v => v.IdUsuarioempleado == usuarioActual.IdUsuario);
+            }
+
+            // Filtro por ID de venta
+            if (idBusqueda.HasValue)
+            {
+                query = query.Where(v => v.IdVenta == idBusqueda.Value);
+            }
+
+            var ventas = await query
+                .OrderByDescending(v => v.Fecha)
                 .ToListAsync();
 
-            // Traer pagos agrupados por venta
+            // ==========
+            // PAGOS POR VENTA
+            // ==========
+            var idsVentas = ventas.Select(v => v.IdVenta).ToList();
+
             var pagosPorVenta = await _context.VentaPagos
+                .Where(p => p.IdVenta.HasValue && idsVentas.Contains(p.IdVenta.Value))
                 .GroupBy(p => p.IdVenta)
                 .Select(g => new
                 {
@@ -53,13 +78,13 @@ namespace Optica1.Controllers
                 })
                 .ToListAsync();
 
-            // Pasar un diccionario VentaId -> TotalAbonado a la vista
             ViewBag.TotalAbonadoPorVenta = pagosPorVenta
                 .Where(x => x.IdVenta.HasValue)
                 .ToDictionary(x => x.IdVenta!.Value, x => x.TotalAbonado);
 
+            ViewBag.IdBusqueda = idBusqueda;
+
             return View(ventas);
-        
         }
 
         // ============================
@@ -100,31 +125,31 @@ namespace Optica1.Controllers
             var empleado = await GetUsuarioActualAsync();
             if (empleado == null)
             {
-                TempData["Error"] = "No se pudo obtener el usuario empleado actual.";
+                TempData["ErrorVenta"] = "No se pudo obtener el usuario empleado actual.";
                 return RedirectToAction(nameof(Crear));
             }
 
             if (productoId == null || cantidad == null || productoId.Count == 0)
             {
-                TempData["Error"] = "Debe agregar al menos un producto a la venta.";
+                TempData["ErrorVenta"] = "Debe agregar al menos un producto a la venta.";
                 return RedirectToAction(nameof(Crear));
             }
 
             if (total <= 0)
             {
-                TempData["Error"] = "El total de la venta debe ser mayor a 0.";
+                TempData["ErrorVenta"] = "El total de la venta debe ser mayor a 0.";
                 return RedirectToAction(nameof(Crear));
             }
 
             if (abono < 0)
             {
-                TempData["Error"] = "El abono no puede ser negativo.";
+                TempData["ErrorVenta"] = "El abono no puede ser negativo.";
                 return RedirectToAction(nameof(Crear));
             }
 
             if (abono > total)
             {
-                TempData["Error"] = "El abono no puede ser mayor que el total.";
+                TempData["ErrorVenta"] = "El abono no puede ser mayor que el total.";
                 return RedirectToAction(nameof(Crear));
             }
 
@@ -136,11 +161,12 @@ namespace Optica1.Controllers
 
                 if (cant <= 0)
                 {
-                    TempData["Error"] = "Las cantidades deben ser mayores que 0.";
+                    TempData["ErrorVenta"] = "Las cantidades deben ser mayores que 0.";
                     return RedirectToAction(nameof(Crear));
                 }
 
-                var prod = await _context.Productos.FirstOrDefaultAsync(p => p.IdProducto == idProd);
+                var prod = await _context.Productos
+                    .FirstOrDefaultAsync(p => p.IdProducto == idProd);
                 if (prod == null)
                     continue;
 
@@ -148,7 +174,8 @@ namespace Optica1.Controllers
 
                 if (stockActual < cant)
                 {
-                    TempData["Error"] = $"No hay stock suficiente para el producto {prod.Nombre}. Stock actual: {stockActual}.";
+                    TempData["ErrorVenta"] =
+                        $"No hay stock suficiente para el producto {prod.Nombre}. Stock actual: {stockActual}.";
                     return RedirectToAction(nameof(Crear));
                 }
             }
@@ -173,8 +200,10 @@ namespace Optica1.Controllers
                 int idProd = productoId[i];
                 int cant = cantidad[i];
 
-                var prod = await _context.Productos.FirstOrDefaultAsync(p => p.IdProducto == idProd);
-                if (prod == null) continue;
+                var prod = await _context.Productos
+                    .FirstOrDefaultAsync(p => p.IdProducto == idProd);
+                if (prod == null)
+                    continue;
 
                 var detalle = new ProductoVentum
                 {
@@ -190,14 +219,99 @@ namespace Optica1.Controllers
                 _context.Productos.Update(prod);
             }
 
-            // 🔹 Aquí podríamos crear un registro en VentaPagos con el abono inicial,
-            // pero como no vimos el modelo VentaPago, por ahora solo guardamos el Abono en Ventum.
-            // Más adelante, cuando me pases VentaPago.cs, dejamos esto full.
-
             await _context.SaveChangesAsync();
 
             TempData["Mensaje"] = "Venta registrada correctamente.";
             return RedirectToAction(nameof(Index));
+        }
+
+        // ============================
+        // CANCELAR / ELIMINAR VENTA
+        // ============================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Cancelar(int id)
+        {
+            // Usa aquí el mismo DbSet que tengas definido en el DbContext.
+            // En tu caso es public virtual DbSet<Ventum> Venta { get; set; }
+            var venta = await _context.Venta.FindAsync(id);
+            if (venta == null)
+                return NotFound();
+
+            // Por ahora la eliminamos físicamente.
+            _context.Venta.Remove(venta);
+            await _context.SaveChangesAsync();
+
+            TempData["Mensaje"] = "La venta fue eliminada correctamente.";
+            return RedirectToAction(nameof(Index));
+        }
+
+        // ============================
+        // BUSCAR CLIENTE POR DOCUMENTO (IdPersona)
+        // ============================
+        [HttpGet]
+        public async Task<IActionResult> BuscarClientePorDocumento(string documento)
+        {
+            if (string.IsNullOrWhiteSpace(documento))
+                return Json(new { encontrado = false });
+
+            // Intentamos convertir el documento a long (porque IdPersona es long)
+            if (!long.TryParse(documento, out long docNumber))
+                return Json(new { encontrado = false });
+
+            // Aquí el documento ES el IdPersona
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.IdPersona == docNumber);
+
+            if (persona == null)
+                return Json(new { encontrado = false });
+
+            // Buscamos el usuario ligado a esa persona
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.IdPersona == persona.IdPersona);
+
+            if (usuario == null)
+                return Json(new { encontrado = false });
+
+            // Devolvemos datos básicos
+            return Json(new
+            {
+                encontrado = true,
+                idUsuario = usuario.IdUsuario,
+                nombreCompleto = $"{persona.PrimerNombre} {persona.SegundoNombre} {persona.PrimerApellido} {persona.SegundoApellido}".Trim(),
+                correo = persona.Correo,
+                telefono = persona.Telefono?.ToString()
+            });
+        }
+
+        // ============================
+        // BUSCAR PRODUCTO POR CÓDIGO (IdProducto)
+        // ============================
+        [HttpGet]
+        public async Task<IActionResult> BuscarProductoPorCodigo(string codigo)
+        {
+            if (string.IsNullOrWhiteSpace(codigo))
+                return Json(new { encontrado = false });
+
+            // Suponemos que el código es el IdProducto (int)
+            if (!int.TryParse(codigo, out int idProducto))
+                return Json(new { encontrado = false });
+
+            var producto = await _context.Productos
+                .FirstOrDefaultAsync(p => p.IdProducto == idProducto
+                                       && (p.Estado == "Activo" || p.Estado == null));
+
+            if (producto == null)
+                return Json(new { encontrado = false });
+
+            return Json(new
+            {
+                encontrado = true,
+                idProducto = producto.IdProducto,
+                nombre = producto.Nombre,
+                precio = producto.Precio ?? 0,
+                stock = producto.Stock ?? 0
+            });
         }
     }
 }

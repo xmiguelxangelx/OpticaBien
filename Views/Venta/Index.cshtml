@@ -6,6 +6,19 @@
         as IDictionary<int, float>;
 }
 
+@* Filtro por ID de venta *@
+<form asp-action="Index" method="get" class="row g-3 mb-3">
+    <div class="col-md-3">
+        <label class="form-label">Buscar por ID de venta</label>
+        <div class="input-group">
+            <input type="number" name="idBusqueda" class="form-control"
+                   min="1" value="@ViewBag.IdBusqueda" />
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+</form>
+
+
 <h2 class="mt-3">Ventas registradas</h2>
 
 @if (TempData["Mensaje"] != null)
@@ -62,26 +75,22 @@
                     </ul>
                 </td>
                 <td>
-                    <a asp-controller="VentaPago"
-                       asp-action="Index"
-                       asp-route-idVenta="@venta.IdVenta"
-                       class="btn btn-sm btn-outline-info mb-1">
-                        Ver pagos
-                    </a>
+                    <a asp-action="Pagos" asp-route-id="@venta.IdVenta"
+                       class="btn btn-info btn-sm">Ver pagos</a>
 
-                    <a asp-action="Editar"
-                       asp-route-id="@venta.IdVenta"
-                       class="btn btn-sm btn-outline-primary mb-1">
-                        Editar
-                    </a>
+                    @* Si todavía no tienes Editar implementado puedes dejar el botón o quitarlo temporalmente *@
+                    @* <a asp-action="Editar" asp-route-id="@venta.IdVenta"
+       class="btn btn-primary btn-sm">Editar</a> *@
 
-                    <a asp-action="Eliminar"
-                       asp-route-id="@venta.IdVenta"
-                       class="btn btn-sm btn-outline-danger"
-                       onclick="return confirm('¿Eliminar esta venta?');">
-                        Eliminar
-                    </a>
+                    <form asp-action="Cancelar" asp-route-id="@venta.IdVenta"
+                          method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm"
+                                onclick="return confirm('¿Seguro que deseas cancelar esta venta?');">
+                            Cancelar
+                        </button>
+                    </form>
                 </td>
+
             </tr>
         }
     </tbody>

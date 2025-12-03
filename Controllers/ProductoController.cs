@@ -243,5 +243,31 @@ namespace Optica1.Controllers
             }
         }
 
+        // ============================
+        // BUSCAR PRODUCTO POR CÓDIGO (IdProducto)
+        // ============================
+        [HttpGet]
+        public async Task<IActionResult> BuscarPorCodigo(string codigo)
+        {
+            if (string.IsNullOrWhiteSpace(codigo))
+                return Json(new { ok = false });
+
+            // Suponemos que el código que escribes es el IdProducto (int)
+            if (!int.TryParse(codigo, out int idProducto))
+                return Json(new { ok = false });
+
+            var producto = await _context.Productos
+                .FirstOrDefaultAsync(p => p.IdProducto == idProducto);
+
+            if (producto == null)
+                return Json(new { ok = false });
+
+            return Json(new
+            {
+                ok = true,
+                nombre = producto.Nombre,
+                precio = producto.Precio
+            });
+        }
     }
 }
