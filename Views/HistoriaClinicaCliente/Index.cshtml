@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Optica1.Models.Historiaclinica>
+
+@{
+    ViewData["Title"] = "Mi historia clínica";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Mi historia clínica</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Motivo de consulta</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="4" class="text-center text-muted">
+                        Aún no tienes historias clínicas registradas.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var h in Model)
+                {
+                    <tr>
+                        <td>@(h.FechaCreacion?.ToString("yyyy-MM-dd") ?? "")</td>
+                        <td>@h.MotivoConsulta</td>
+                        <td>@h.Estado</td>
+                        <td>
+                            <a asp-action="Detalle" asp-route-id="@h.IdHistoriaclinica"
+                               class="btn btn-sm btn-outline-primary">
+                                Ver detalle
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Cliente" asp-action="Index" class="btn btn-outline-secondary">
+        Volver al panel del cliente
+    </a>
+</div>

@@ -1,0 +1,19 @@
+﻿<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@(p.Precio ?? 0)</td>
+                <td>@(p.Stock ?? 0)</td>
+            </tr>
+        }
+    </tbody>
+</table>

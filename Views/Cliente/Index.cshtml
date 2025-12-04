@@ -1,0 +1,212 @@
+﻿@model Optica1.Models.ClienteDashboardViewModel
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "Panel del Cliente";
+
+    var persona = Model.Usuario?.IdPersonaNavigation;
+
+    var nombreCompleto = persona == null
+        ? Model.Usuario?.NombreUsuario
+        : string.Join(" ",
+            new[]
+            {
+                persona.PrimerNombre,
+                persona.SegundoNombre,
+                persona.PrimerApellido,
+                persona.SegundoApellido
+            }.Where(s => !string.IsNullOrWhiteSpace(s)));
+
+    // Próxima cita (la más cercana en fecha/hora)
+    var proximaCita = (Model.CitasProximas ?? Enumerable.Empty<Optica1.Models.Citas>())
+        .OrderBy(c => c.Fecha)
+        .ThenBy(c => c.Hora)
+        .FirstOrDefault();
+}
+
+<div class="container mt-4 mb-5">
+
+    @* MENSAJES *@
+    @if (TempData["Mensaje"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Mensaje"]
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    @* ENCABEZADO *@
+    <div class="mb-4">
+        <h2 class="fw-bold">Hola, @nombreCompleto</h2>
+        <p class="text-muted">
+            Desde aquí puedes ver tus próximas citas, revisar tu historial y gestionar tus compras en Óptica Lincoln’s.
+        </p>
+    </div>
+
+    @* FILA 1: PRÓXIMA CITA DESTACADA *@
+    <div class="row g-4 mb-4">
+        <div class="col-lg-8">
+            <div class="card border-0 rounded-4 shadow-sm text-white"
+                 style="background: linear-gradient(120deg, #0062ff, #00a0ff);">
+                <div class="card-body">
+                    <h4 class="fw-bold mb-3">Próxima cita</h4>
+
+                    @if (proximaCita == null)
+                    {
+                        <p class="mb-0">
+                            Aún no tienes citas próximas registradas.
+                        </p>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-1">
+                                    <strong>Fecha:</strong>
+                                    @proximaCita.Fecha.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+                                </p>
+                                <p class="mb-1">
+                                    <strong>Hora:</strong>
+                                    @proximaCita.Hora.ToString(@"hh\:mm")
+                                </p>
+                                <p class="mb-1">
+                                    <strong>Optómetra:</strong>
+                                    @(proximaCita.IdUsuarioempleadoNavigation?.NombreUsuario ?? "Por asignar")
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-1">
+                                    <strong>Motivo:</strong> @proximaCita.Motivo
+                                </p>
+                                <p class="mb-1">
+                                    <strong>Estado:</strong> @proximaCita.Estado
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <a asp-controller="Cita" asp-action="Index"
+                               class="btn btn-light btn-sm me-2">
+                                Ver todas mis citas
+                            </a>
+                            <a asp-controller="Cita" asp-action="Editar" asp-route-id="@proximaCita.IdCita"
+                               class="btn btn-outline-light btn-sm">
+                                Reprogramar / ver detalles
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @* Tarjeta lateral opcional: acceso rápido a historia clínica *@
+        <div class="col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="fw-bold mb-2">Mi historia clínica</h5>
+                        <p class="text-muted mb-3">
+                            Consulta los diagnósticos y formulaciones registrados por tu optómetra.
+                        </p>
+                    </div>
+                    <div>
+                        <a asp-controller="HistoriaClinicaCliente" asp-action="Index"
+                           class="btn btn-outline-primary w-100">
+                            Ver mi historia clínica
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* FILA 2: TARJETAS DE ACCESO RÁPIDO + RESUMEN COMPRAS *@
+    <div class="row g-4">
+        @* Acceso rápido: historial de citas *@
+        <div class="col-md-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="fw-bold mb-2">Historial de citas</h5>
+                        <p class="text-muted mb-3">
+                            Revisa todas las citas que has tenido en la óptica.
+                        </p>
+                    </div>
+                    <a asp-controller="Cita" asp-action="Index"
+                       class="btn btn-outline-primary w-100">
+                        Ver historial de citas
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        @* Mis compras (resumen corto + enlace a detalle) *@
+        <div class="col-md-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="fw-bold mb-2">Mis compras</h5>
+                        <p class="text-muted mb-2">
+                            Historial de compras y saldos pendientes.
+                        </p>
+
+                        @if (Model.Compras == null || !Model.Compras.Any())
+                        {
+                            <p class="text-muted">Aún no tienes compras registradas.</p>
+                        }
+                        else
+                        {
+                            <table class="table table-sm mb-2">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                        <th>Saldo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var v in Model.Compras)
+                                    {
+                                        <tr>
+                                            <td>@(v.Fecha?.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture) ?? "")</td>
+                                            <td>@v.Total</td>
+                                            <td>@v.Saldo</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+
+                    <a asp-controller="Venta" asp-action="MisCompras"
+                       class="btn btn-outline-primary w-100">
+                        Ver todas mis compras
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        @* Catálogo de productos *@
+        <div class="col-md-4">
+            <div class="card border-0 rounded-4 shadow-sm h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="fw-bold mb-2">Catálogo de productos</h5>
+                        <p class="text-muted mb-3">
+                            Explora monturas, lentes y otros productos recomendados por tu optómetra.
+                        </p>
+                    </div>
+                    <a asp-controller="CatalogoCliente" asp-action="Index"
+                       class="btn btn-primary w-100">
+                        Ver catálogo de productos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

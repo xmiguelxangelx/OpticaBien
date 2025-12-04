@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Optica1.Models.Ventum>
+
+@{
+    ViewData["Title"] = "Mis Compras";
+    var abonosDict = ViewBag.TotalAbonadoPorVenta as IDictionary<int, float>;
+}
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Mis Compras</h2>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Empleado</th>
+                <th>Total</th>
+                <th>Abonado</th>
+                <th>Saldo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">
+                        Aún no tienes compras registradas.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var v in Model)
+                {
+                    float total = v.Total ?? 0;
+
+                    float abonado = 0;
+                    if (abonosDict != null && abonosDict.ContainsKey(v.IdVenta))
+                    {
+                        abonado = abonosDict[v.IdVenta];
+                    }
+
+                    float saldo = total - abonado;
+
+                    <tr>
+                        <td>@($"{v.Fecha:yyyy-MM-dd}")</td>
+                        <td>@v.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                        <td>@total</td>
+                        <td>@abonado</td>
+                        <td>@saldo</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Cliente" asp-action="Index" class="btn btn-outline-secondary">
+        Volver al panel del cliente
+    </a>
+</div>

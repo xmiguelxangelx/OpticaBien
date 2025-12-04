@@ -37,7 +37,7 @@
             <th>Abonado</th>      @* total abonado real *@
             <th>Saldo</th>
             <th>Fecha entrega</th>
-            <th>Productos</th>
+           
             <th>Acciones</th>
         </tr>
     </thead>
@@ -64,31 +64,24 @@
                 <td>@totalAbonado</td>
                 <td>@saldo</td>
                 <td>@venta.FechaEntrega</td>
-                <td>
-                    <ul>
-                        @foreach (var item in venta.ProductoVenta)
-                        {
-                            <li>
-                                @item.IdProductoNavigation?.Nombre — <strong>@item.Cantidad</strong>
-                            </li>
-                        }
-                    </ul>
-                </td>
+                
                 <td>
                     <a asp-action="Pagos" asp-route-id="@venta.IdVenta"
-                       class="btn btn-info btn-sm">Ver pagos</a>
+                       class="btn btn-info btn-sm">Abonar / Ver pagos</a>
 
-                    @* Si todavía no tienes Editar implementado puedes dejar el botón o quitarlo temporalmente *@
-                    @* <a asp-action="Editar" asp-route-id="@venta.IdVenta"
-       class="btn btn-primary btn-sm">Editar</a> *@
+                    <a asp-action="Editar" asp-route-id="@venta.IdVenta"
+                       class="btn btn-warning btn-sm">Editar</a>
 
                     <form asp-action="Cancelar" asp-route-id="@venta.IdVenta"
                           method="post" class="d-inline">
+                        @Html.AntiForgeryToken()
                         <button type="submit" class="btn btn-danger btn-sm"
                                 onclick="return confirm('¿Seguro que deseas cancelar esta venta?');">
                             Cancelar
                         </button>
                     </form>
+
+
                 </td>
 
             </tr>

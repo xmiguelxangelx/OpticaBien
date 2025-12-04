@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Optica1.Models.Citas>
+@using System
 
 @{
     ViewData["Title"] = "Mis Citas";
@@ -12,9 +13,12 @@
             @TempData["Mensaje"]
         </div>
     }
-
-    
-
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
 
     @if (User.IsInRole("administrador"))
     {
@@ -25,50 +29,189 @@
 
     <h2 class="mb-4">Mis Citas</h2>
 
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Fecha</th>
-                <th>Hora</th>
-                <th>Motivo</th>
-                <th>Estado</th>
-                <th>Paciente</th>
-                <th>Optometra</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (!Model.Any())
-            {
+    @* ============================
+       VISTA PARA CLIENTE
+       ============================ *@
+    @if (User.IsInRole("cliente"))
+    {
+        var hoy = DateTime.Today;
+
+        var proximas = Model
+        .Where(c => c.Estado != "Inactiva" && c.Fecha.Date >= hoy)
+        .OrderBy(c => c.Fecha)
+        .ThenBy(c => c.Hora)
+        .ToList();
+
+        var historial = Model
+        .Where(c => c.Fecha.Date < hoy || c.Estado == "Atendida" || c.Estado == "Cancelada")
+        .OrderByDescending(c => c.Fecha)
+        .ThenByDescending(c => c.Hora)
+        .ToList();
+
+        <!-- Próximas citas -->
+        <h4 class="mt-3">Próximas citas</h4>
+
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                    <td colspan="7" class="text-center text-muted">
-                        No hay citas registradas.
-                    </td>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                    <th>Optometra</th>
+                    <th>Acciones</th>
                 </tr>
-            }
-            else
-            {
-                foreach (var c in Model)
+            </thead>
+            <tbody>
+                @if (!proximas.Any())
                 {
                     <tr>
-                        <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
-                        <td>@c.Hora.ToString(@"hh\:mm")</td>
-                        <td>@c.Motivo</td>
-                        <td>@c.Estado</td>
-                        <td>@c.IdUsuariopacienteNavigation?.NombreUsuario</td>
-                        <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
-                        <td>
-                            <a asp-action="Editar" asp-route-id="@c.IdCita"
-                               class="btn btn-sm btn-warning me-1">Editar</a>
-
-                            <a asp-action="Eliminar" asp-route-id="@c.IdCita"
-                               class="btn btn-sm btn-danger">Eliminar</a>
+                        <td colspan="6" class="text-center text-muted">
+                            No tienes citas próximas.
                         </td>
                     </tr>
                 }
-            }
-        </tbody>
-    </table>
+                else
+                {
+                    foreach (var c in proximas)
+                    {
+                        bool puedeGestionar = c.Estado == "Pendiente" && c.Fecha.Date >= DateTime.Today;
+
+                        <tr>
+                            <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                            <td>@c.Hora.ToString(@"hh\:mm")</td>
+                            <td>@c.Motivo</td>
+                            <td>@c.Estado</td>
+                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                            <td>
+                                @if (puedeGestionar)
+                                {
+                                    <a asp-action="Editar" asp-route-id="@c.IdCita"
+                                       class="btn btn-sm btn-warning me-1">Editar</a>
+
+                                    <form asp-action="Eliminar" asp-route-id="@c.IdCita"
+                                          method="post" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit"
+                                                class="btn btn-sm btn-danger"
+                                                onclick="return confirm('¿Seguro que deseas cancelar esta cita?');">
+                                            Eliminar
+                                        </button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Sin acciones</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <!-- Historial de citas -->
+        <h4 class="mt-4">Historial de citas</h4>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                    <th>Optometra</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!historial.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">
+                            Aún no tienes historial de citas.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var c in historial)
+                    {
+                        <tr>
+                            <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                            <td>@c.Hora.ToString(@"hh\:mm")</td>
+                            <td>@c.Motivo</td>
+                            <td>@c.Estado</td>
+                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        @* ============================
+           VISTA PARA ADMIN / EMPLEADO / OPTOMETRA
+           ============================ *@
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Motivo</th>
+                    <th>Estado</th>
+                    <th>Paciente</th>
+                    <th>Optometra</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="7" class="text-center text-muted">
+                            No hay citas registradas.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var c in Model)
+                    {
+                        <tr>
+                            <td>@c.Fecha.ToString("yyyy-MM-dd")</td>
+                            <td>@c.Hora.ToString(@"hh\:mm")</td>
+                            <td>@c.Motivo</td>
+                            <td>@c.Estado</td>
+                            <td>@c.IdUsuariopacienteNavigation?.NombreUsuario</td>
+                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
+                            <td>
+                                @* Botón para cambiar estado: solo admin / empleado / optometra *@
+                                @if (User.IsInRole("administrador") || User.IsInRole("empleado") || User.IsInRole("optometra"))
+                                {
+                                    <a asp-action="CambiarEstado" asp-route-id="@c.IdCita"
+                                       class="btn btn-sm btn-info me-1">Estado</a>
+                                }
+
+                                <a asp-action="Editar" asp-route-id="@c.IdCita"
+                                   class="btn btn-sm btn-warning me-1">Editar</a>
+
+                                <form asp-action="Eliminar" asp-route-id="@c.IdCita"
+                                      method="post" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit"
+                                            class="btn btn-sm btn-danger"
+                                            onclick="return confirm('¿Seguro que deseas cancelar esta cita?');">
+                                        Eliminar
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
 
     @if (User.IsInRole("cliente") || User.IsInRole("empleado") || User.IsInRole("administrador"))
     {

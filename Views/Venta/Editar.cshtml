@@ -1,0 +1,88 @@
+﻿@model Optica1.Models.Ventum
+
+@{
+    ViewData["Title"] = "Editar venta";
+}
+
+<h2>Editar venta @Model.IdVenta</h2>
+
+@if (TempData["ErrorVenta"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorVenta"]</div>
+}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5>Datos de la venta</h5>
+        <p><strong>Cliente:</strong> @Model.IdUsuariopacienteNavigation?.NombreUsuario</p>
+        <p><strong>Empleado:</strong> @Model.IdUsuarioempleadoNavigation?.NombreUsuario</p>
+        <p><strong>Fecha venta:</strong> @Model.Fecha</p>
+        <p><strong>Total actual:</strong> @Model.Total</p>
+    </div>
+</div>
+
+<form asp-action="Editar" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.IdVenta" />
+
+    <div class="mb-3">
+        <label class="form-label">Fecha de entrega</label>
+        <input type="date"
+               name="fechaEntrega"
+               class="form-control"
+               value="@(Model.FechaEntrega.HasValue? Model.FechaEntrega.Value.ToString("yyyy-MM-dd") : "")" />
+    </div>
+
+    <h4>Productos de la venta</h4>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Quitar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.ProductoVenta != null && Model.ProductoVenta.Any())
+            {
+                var lista = Model.ProductoVenta.ToList();
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    var det = lista[i];
+                    <tr>
+                        <td>@det.IdProductoNavigation?.Nombre</td>
+                        <td style="max-width:120px;">
+                            <!-- IDs y nuevas cantidades en paralelo -->
+                            <input type="hidden" name="productosIds" value="@det.IdProducto" />
+                            <input type="number"
+                                   name="cantidadesNuevas"
+                                   class="form-control"
+                                   min="1"
+                                   value="@det.Cantidad" />
+                        </td>
+                        <td>
+                            <input type="checkbox"
+                                   name="productosAEliminar"
+                                   value="@det.IdProducto" />
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">Esta venta no tiene productos asociados.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p class="text-muted">
+        Puedes cambiar la cantidad de los productos.
+        Si marcas "Quitar", el producto se eliminará de la venta y se devolverá al stock.
+    </p>
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver a ventas</a>
+</form>

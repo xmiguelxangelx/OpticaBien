@@ -1,0 +1,37 @@
+﻿@model Optica1.Models.Historiaclinica
+
+@{
+    ViewData["Title"] = "Detalle historia clínica";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">Detalle de historia clínica</h2>
+
+    <div class="card shadow-sm border-0 rounded-4 mb-4">
+        <div class="card-body">
+            <p><strong>Fecha de creación:</strong> @(Model.FechaCreacion?.ToString("yyyy-MM-dd") ?? "")</p>
+            <p><strong>Estado:</strong> @Model.Estado</p>
+
+            <hr />
+
+            <p><strong>Motivo de consulta:</strong><br />@Model.MotivoConsulta</p>
+            <p><strong>Antecedentes:</strong><br />@Model.Antecedentes</p>
+
+            <hr />
+
+            <p><strong>Agudeza visual OD:</strong> @Model.AgudezaVisualOd</p>
+            <p><strong>Agudeza visual OI:</strong> @Model.AgudezaVisualOi</p>
+
+            <p><strong>Rx final OD:</strong> @Model.RxFinalOd</p>
+            <p><strong>Rx final OI:</strong> @Model.RxFinalOi</p>
+
+            <hr />
+
+            <p><strong>Observaciones:</strong><br />@Model.Observaciones</p>
+        </div>
+    </div>
+
+    <a asp-action="Index" class="btn btn-outline-secondary">
+        Volver a historias clínicas
+    </a>
+</div>

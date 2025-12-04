@@ -1,0 +1,73 @@
+﻿@model Optica1.Models.PagosVentaViewModel
+
+@{
+    ViewData["Title"] = "Abonos de la venta";
+}
+
+<h2>Abonos de la venta @Model.Venta.IdVenta</h2>
+
+@if (TempData["MensajePago"] != null)
+{
+    <div class="alert alert-success">@TempData["MensajePago"]</div>
+}
+
+@if (TempData["ErrorPago"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorPago"]</div>
+}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5>Datos de la venta</h5>
+        <p><strong>Cliente:</strong> @Model.Venta.IdUsuariopacienteNavigation?.NombreUsuario</p>
+        <p><strong>Empleado:</strong> @Model.Venta.IdUsuarioempleadoNavigation?.NombreUsuario</p>
+        <p><strong>Fecha:</strong> @Model.Venta.Fecha</p>
+        <p><strong>Total:</strong> @Model.Total</p>
+        <p><strong>Abonado:</strong> @Model.Abonado</p>
+        <p><strong>Saldo:</strong> @Model.Saldo</p>
+    </div>
+</div>
+
+<h4>Registrar nuevo abono</h4>
+
+<form asp-action="AgregarPago" method="post" class="mb-4">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="idVenta" value="@Model.Venta.IdVenta" />
+
+    <div class="mb-3">
+        <label class="form-label">Monto del abono</label>
+        <input type="number" step="0.01" name="monto" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar abono</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver a ventas</a>
+</form>
+
+<h4>Historial de pagos</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha pago</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Pagos != null && Model.Pagos.Any())
+        {
+            foreach (var p in Model.Pagos)
+            {
+                <tr>
+                    <td>@p.FechaPago</td>
+                    <td>@p.Monto</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2">No hay abonos registrados.</td>
+            </tr>
+        }
+    </tbody>
+</table>

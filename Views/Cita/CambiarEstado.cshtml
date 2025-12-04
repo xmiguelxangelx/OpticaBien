@@ -1,34 +1,51 @@
 ﻿@model Optica1.Models.Citas
+
 @{
-    ViewData["Title"] = "Cambiar estado de cita";
-    var estados = ViewBag.Estados as string[];
+    ViewData["Title"] = "Cambiar estado de la cita";
+    var estados = ViewBag.Estados as List<string> ?? new List<string>();
 }
 
 <div class="container mt-4">
-    <h2>Cambiar estado de la cita</h2>
 
-    <p><strong>Paciente:</strong> @Model.IdUsuariopacienteNavigation?.NombreUsuario</p>
-    <p><strong>Fecha:</strong> @Model.Fecha.ToString("yyyy-MM-dd")</p>
-    <p><strong>Hora:</strong> @Model.Hora</p>
-    <p><strong>Motivo:</strong> @Model.Motivo</p>
-    <p><strong>Estado actual:</strong> @Model.Estado</p>
+    <h2 class="mb-4">Cambiar estado de la cita</h2>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Datos de la cita</h5>
+            <p><strong>Fecha:</strong> @Model.Fecha.ToString("yyyy-MM-dd")</p>
+            <p><strong>Hora:</strong> @Model.Hora.ToString(@"hh\:mm")</p>
+            <p><strong>Paciente:</strong> @Model.IdUsuariopacienteNavigation?.NombreUsuario</p>
+            <p><strong>Optometra:</strong> @Model.IdUsuarioempleadoNavigation?.NombreUsuario</p>
+            <p><strong>Motivo:</strong> @Model.Motivo</p>
+            <p><strong>Estado actual:</strong> @Model.Estado</p>
+        </div>
+    </div>
 
     <form asp-action="CambiarEstado" method="post">
+        @Html.AntiForgeryToken()
         <input type="hidden" name="id" value="@Model.IdCita" />
 
         <div class="mb-3">
             <label class="form-label">Nuevo estado</label>
             <select name="nuevoEstado" class="form-select">
-                @foreach (var e in estados)
+                @foreach (var est in estados)
                 {
-                    <option value="@e" selected="@(e == Model.Estado)">
-                        @e
+                    <option value="@est" selected="@(est == Model.Estado)">
+                        @est
                     </option>
                 }
             </select>
         </div>
 
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <a asp-action="Index" class="btn btn-outline-secondary ms-2">Cancelar</a>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Volver a citas</a>
     </form>
+
 </div>

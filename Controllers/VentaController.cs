@@ -38,7 +38,6 @@ namespace Optica1.Controllers
         {
             var usuarioActual = await GetUsuarioActualAsync();
 
-            // Base: todas las ventas con sus relaciones
             var query = _context.Venta
                 .Include(v => v.IdUsuariopacienteNavigation)
                     .ThenInclude(u => u.IdPersonaNavigation)
@@ -47,13 +46,11 @@ namespace Optica1.Controllers
                     .ThenInclude(pv => pv.IdProductoNavigation)
                 .AsQueryable();
 
-            // Si es empleado, filtramos solo sus ventas
             if (User.IsInRole("empleado") && usuarioActual != null)
             {
                 query = query.Where(v => v.IdUsuarioempleado == usuarioActual.IdUsuario);
             }
 
-            // Filtro por ID de venta
             if (idBusqueda.HasValue)
             {
                 query = query.Where(v => v.IdVenta == idBusqueda.Value);
@@ -63,9 +60,6 @@ namespace Optica1.Controllers
                 .OrderByDescending(v => v.Fecha)
                 .ToListAsync();
 
-            // ==========
-            // PAGOS POR VENTA
-            // ==========
             var idsVentas = ventas.Select(v => v.IdVenta).ToList();
 
             var pagosPorVenta = await _context.VentaPagos
@@ -92,7 +86,6 @@ namespace Optica1.Controllers
         // ============================
         public async Task<IActionResult> Crear()
         {
-            // Clientes: por ahora todos los usuarios (luego podemos filtrar solo rol "cliente")
             ViewBag.Clientes = new SelectList(
                 await _context.Usuarios.ToListAsync(),
                 "IdUsuario",
@@ -153,7 +146,7 @@ namespace Optica1.Controllers
                 return RedirectToAction(nameof(Crear));
             }
 
-            // 1️⃣ Validar stock de todos los productos antes de registrar la venta
+            // Validar stock
             for (int i = 0; i < productoId.Count; i++)
             {
                 int idProd = productoId[i];
@@ -180,7 +173,6 @@ namespace Optica1.Controllers
                 }
             }
 
-            // 2️⃣ Crear la venta
             var venta = new Ventum
             {
                 Fecha = fecha,
@@ -194,7 +186,7 @@ namespace Optica1.Controllers
             _context.Venta.Add(venta);
             await _context.SaveChangesAsync();
 
-            // 3️⃣ Registrar productos vendidos + actualizar stock
+            // Detalles + stock
             for (int i = 0; i < productoId.Count; i++)
             {
                 int idProd = productoId[i];
@@ -232,19 +224,212 @@ namespace Optica1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Cancelar(int id)
         {
-            // Usa aquí el mismo DbSet que tengas definido en el DbContext.
-            // En tu caso es public virtual DbSet<Ventum> Venta { get; set; }
-            var venta = await _context.Venta.FindAsync(id);
+            var venta = await _context.Venta
+                .Include(v => v.ProductoVenta)
+                .FirstOrDefaultAsync(v => v.IdVenta == id);
+
             if (venta == null)
                 return NotFound();
 
-            // Por ahora la eliminamos físicamente.
+            foreach (var detalle in venta.ProductoVenta)
+            {
+                var producto = await _context.Productos
+                    .FirstOrDefaultAsync(p => p.IdProducto == detalle.IdProducto);
+
+                if (producto != null)
+                {
+                    producto.Stock = (producto.Stock ?? 0) + detalle.Cantidad;
+                    producto.FechaActualizacion = DateOnly.FromDateTime(DateTime.Now);
+                    _context.Productos.Update(producto);
+                }
+            }
+
+            if (venta.ProductoVenta != null && venta.ProductoVenta.Any())
+            {
+                _context.ProductoVenta.RemoveRange(venta.ProductoVenta);
+            }
+
+            var pagos = await _context.VentaPagos
+                .Where(p => p.IdVenta == id)
+                .ToListAsync();
+
+            if (pagos.Any())
+            {
+                _context.VentaPagos.RemoveRange(pagos);
+            }
+
             _context.Venta.Remove(venta);
+
             await _context.SaveChangesAsync();
 
-            TempData["Mensaje"] = "La venta fue eliminada correctamente.";
+            TempData["Mensaje"] = "La venta fue cancelada y se revirtió el stock correctamente.";
             return RedirectToAction(nameof(Index));
         }
+
+        // ============================
+        // EDITAR VENTA (fecha + eliminar productos)
+        // ============================
+
+        [HttpGet]
+        public async Task<IActionResult> Editar(int id)
+        {
+            var venta = await _context.Venta
+                .Include(v => v.IdUsuariopacienteNavigation)
+                .Include(v => v.IdUsuarioempleadoNavigation)
+                .Include(v => v.ProductoVenta)
+                    .ThenInclude(pv => pv.IdProductoNavigation)
+                .FirstOrDefaultAsync(v => v.IdVenta == id);
+
+            if (venta == null)
+                return NotFound();
+
+            return View(venta);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Editar(
+     int id,
+     DateOnly? fechaEntrega,
+     int[] productosAEliminar,
+     int[] productosIds,
+     int[] cantidadesNuevas)
+        {
+            var venta = await _context.Venta
+                .Include(v => v.ProductoVenta)
+                .FirstOrDefaultAsync(v => v.IdVenta == id);
+
+            if (venta == null)
+                return NotFound();
+
+            // Actualizar fecha de entrega
+            venta.FechaEntrega = fechaEntrega;
+
+            // 1️⃣ Preparar estructuras de apoyo
+            var eliminarSet = (productosAEliminar != null)
+                ? new HashSet<int>(productosAEliminar)
+                : new HashSet<int>();
+
+            var nuevasCantidades = new Dictionary<int, int>();
+            if (productosIds != null && cantidadesNuevas != null &&
+                productosIds.Length == cantidadesNuevas.Length)
+            {
+                for (int i = 0; i < productosIds.Length; i++)
+                {
+                    nuevasCantidades[productosIds[i]] = cantidadesNuevas[i];
+                }
+            }
+
+            // Abonos ya realizados
+            float abonadoActual = await _context.VentaPagos
+                .Where(p => p.IdVenta == id)
+                .SumAsync(p => (float?)(p.Monto ?? 0) ?? 0);
+
+            // 2️⃣ Aplicar cambios: eliminar productos y ajustar cantidades + stock
+            var detalles = venta.ProductoVenta.ToList();
+
+            foreach (var det in detalles)
+            {
+                int idProd = det.IdProducto ?? 0;
+                var producto = await _context.Productos
+                    .FirstOrDefaultAsync(p => p.IdProducto == idProd);
+
+                if (producto == null)
+                    continue;
+
+                int cantidadActual = det.Cantidad ?? 0;
+
+                // a) Eliminar producto completo
+                if (eliminarSet.Contains(idProd))
+                {
+                    producto.Stock = (producto.Stock ?? 0) + cantidadActual;
+                    producto.FechaActualizacion = DateOnly.FromDateTime(DateTime.Now);
+                    _context.Productos.Update(producto);
+
+                    _context.ProductoVenta.Remove(det);
+                    continue;
+                }
+
+                // b) Cambiar cantidad
+                if (nuevasCantidades.TryGetValue(idProd, out int nuevaCant)
+                    && nuevaCant != cantidadActual)
+                {
+                    if (nuevaCant <= 0)
+                    {
+                        TempData["ErrorVenta"] = "Las cantidades deben ser mayores que 0.";
+                        return RedirectToAction(nameof(Editar), new { id });
+                    }
+
+                    int delta = nuevaCant - cantidadActual;
+
+                    if (delta > 0)
+                    {
+                        // Aumentar cantidad → consumir stock
+                        int stockActual = producto.Stock ?? 0;
+                        if (stockActual < delta)
+                        {
+                            TempData["ErrorVenta"] =
+                                $"No hay stock suficiente para aumentar el producto {producto.Nombre}. Stock actual: {stockActual}.";
+                            return RedirectToAction(nameof(Editar), new { id });
+                        }
+
+                        producto.Stock = stockActual - delta;
+                    }
+                    else if (delta < 0)
+                    {
+                        // Disminuir cantidad → devolver stock
+                        int devolver = -delta;
+                        producto.Stock = (producto.Stock ?? 0) + devolver;
+                    }
+
+                    producto.FechaActualizacion = DateOnly.FromDateTime(DateTime.Now);
+                    _context.Productos.Update(producto);
+
+                    det.Cantidad = nuevaCant;
+                    _context.ProductoVenta.Update(det);
+                }
+            }
+
+            // 3️⃣ Recalcular el total desde cero con los productos que quedan
+            float nuevoTotal = 0;
+
+            var detallesRestantes = venta.ProductoVenta
+                .Where(d => !(d.IdProducto.HasValue && eliminarSet.Contains(d.IdProducto.Value)))
+                .ToList();
+
+            foreach (var det in detallesRestantes)
+            {
+                int idProd = det.IdProducto ?? 0;
+                var producto = await _context.Productos
+                    .FirstOrDefaultAsync(p => p.IdProducto == idProd);
+
+                if (producto == null)
+                    continue;
+
+                float precio = producto.Precio ?? 0;
+                int cant = det.Cantidad ?? 0;
+
+                nuevoTotal += (float)(precio * cant);
+            }
+
+            // 4️⃣ Validar contra los abonos
+            if (nuevoTotal < abonadoActual)
+            {
+                TempData["ErrorVenta"] =
+                    "No se pueden aplicar los cambios porque los abonos superarían el nuevo total de la venta.";
+                return RedirectToAction(nameof(Editar), new { id });
+            }
+
+            venta.Total = nuevoTotal;
+            _context.Venta.Update(venta);
+
+            await _context.SaveChangesAsync();
+
+            TempData["Mensaje"] = "La venta se actualizó correctamente.";
+            return RedirectToAction(nameof(Index));
+        }
+
+
 
         // ============================
         // BUSCAR CLIENTE POR DOCUMENTO (IdPersona)
@@ -255,25 +440,21 @@ namespace Optica1.Controllers
             if (string.IsNullOrWhiteSpace(documento))
                 return Json(new { encontrado = false });
 
-            // Intentamos convertir el documento a long (porque IdPersona es long)
             if (!long.TryParse(documento, out long docNumber))
                 return Json(new { encontrado = false });
 
-            // Aquí el documento ES el IdPersona
             var persona = await _context.Personas
                 .FirstOrDefaultAsync(p => p.IdPersona == docNumber);
 
             if (persona == null)
                 return Json(new { encontrado = false });
 
-            // Buscamos el usuario ligado a esa persona
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(u => u.IdPersona == persona.IdPersona);
 
             if (usuario == null)
                 return Json(new { encontrado = false });
 
-            // Devolvemos datos básicos
             return Json(new
             {
                 encontrado = true,
@@ -293,7 +474,6 @@ namespace Optica1.Controllers
             if (string.IsNullOrWhiteSpace(codigo))
                 return Json(new { encontrado = false });
 
-            // Suponemos que el código es el IdProducto (int)
             if (!int.TryParse(codigo, out int idProducto))
                 return Json(new { encontrado = false });
 
@@ -313,5 +493,136 @@ namespace Optica1.Controllers
                 stock = producto.Stock ?? 0
             });
         }
+
+        // ============================
+        // PAGOS (ABONAR / VER PAGOS)
+        // ============================
+        [HttpGet]
+        public async Task<IActionResult> Pagos(int id)
+        {
+            var venta = await _context.Venta
+                .Include(v => v.IdUsuariopacienteNavigation)
+                .Include(v => v.IdUsuarioempleadoNavigation)
+                .FirstOrDefaultAsync(v => v.IdVenta == id);
+
+            if (venta == null)
+                return NotFound();
+
+            var pagos = await _context.VentaPagos
+                .Where(p => p.IdVenta == id)
+                .OrderByDescending(p => p.FechaPago)
+                .ToListAsync();
+
+            float total = venta.Total ?? 0;
+            float abonado = pagos.Sum(p => p.Monto ?? 0);
+            float saldo = total - abonado;
+
+            var model = new PagosVentaViewModel
+            {
+                Venta = venta,
+                Pagos = pagos,
+                Total = total,
+                Abonado = abonado,
+                Saldo = saldo
+            };
+
+            return View(model);
+        }
+
+        // ============================
+        // AGREGAR PAGO
+        // ============================
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AgregarPago(int idVenta, float monto)
+        {
+            var venta = await _context.Venta
+                .FirstOrDefaultAsync(v => v.IdVenta == idVenta);
+
+            if (venta == null)
+                return NotFound();
+
+            if (monto <= 0)
+            {
+                TempData["ErrorPago"] = "El monto del abono debe ser mayor a 0.";
+                return RedirectToAction(nameof(Pagos), new { id = idVenta });
+            }
+
+            float abonadoActual = await _context.VentaPagos
+                .Where(p => p.IdVenta == idVenta)
+                .SumAsync(p => (float?)(p.Monto ?? 0) ?? 0);
+
+            float total = venta.Total ?? 0;
+            float nuevoTotalAbonado = abonadoActual + monto;
+
+            if (nuevoTotalAbonado > total)
+            {
+                TempData["ErrorPago"] = "El abono supera el saldo pendiente.";
+                return RedirectToAction(nameof(Pagos), new { id = idVenta });
+            }
+
+            var pago = new VentaPago
+            {
+                IdVenta = idVenta,
+                Monto = monto,
+                FechaPago = DateOnly.FromDateTime(DateTime.Now)
+            };
+
+            _context.VentaPagos.Add(pago);
+            await _context.SaveChangesAsync();
+
+            TempData["MensajePago"] = "Abono registrado correctamente.";
+            return RedirectToAction(nameof(Pagos), new { id = idVenta });
+        }
+
+        [Authorize(Roles = "cliente")]
+        public async Task<IActionResult> MisCompras()
+        {
+            var usuario = await GetUsuarioActualAsync();
+            if (usuario == null) return Unauthorized();
+
+            var ventas = await _context.Venta
+                .Include(v => v.ProductoVenta)
+                    .ThenInclude(pv => pv.IdProductoNavigation)
+                .Where(v => v.IdUsuariopaciente == usuario.IdUsuario)
+                .OrderByDescending(v => v.Fecha)
+                .ToListAsync();
+
+            var idsVentas = ventas.Select(v => v.IdVenta).ToList();
+
+            var pagosPorVenta = await _context.VentaPagos
+                .Where(p => p.IdVenta.HasValue && idsVentas.Contains(p.IdVenta.Value))
+                .GroupBy(p => p.IdVenta)
+                .Select(g => new
+                {
+                    IdVenta = g.Key,
+                    TotalAbonado = g.Sum(x => x.Monto ?? 0)
+                })
+                .ToListAsync();
+
+            var dictAbonos = pagosPorVenta
+                .Where(x => x.IdVenta.HasValue)
+                .ToDictionary(x => x.IdVenta!.Value, x => x.TotalAbonado);
+
+            // puedes reutilizar VentaClienteResumen o crear un VM específico
+            var modelo = ventas.Select(v =>
+            {
+                float total = v.Total ?? 0;
+                float abonado = dictAbonos.TryGetValue(v.IdVenta, out var a) ? a : 0;
+
+                return new
+                {
+                    v.IdVenta,
+                    v.Fecha,
+                    Total = total,
+                    Abonado = abonado,
+                    Saldo = total - abonado,
+                    Productos = v.ProductoVenta.Select(pv => pv.IdProductoNavigation?.Nombre).ToList()
+                };
+            }).ToList();
+
+            return View(modelo);
+        }
+
     }
 }

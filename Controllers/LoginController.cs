@@ -137,7 +137,7 @@ namespace Optica1.Controllers
                 return RedirectToAction("Index", "Empleado");
 
             if (rolesNormalizados.Contains("cliente"))
-                return RedirectToAction("Index", "Cita");
+                return RedirectToAction("Index", "Cliente");
 
             // Si el rol no coincide con ninguno de los anteriores
             return RedirectToAction("Index", "Home");

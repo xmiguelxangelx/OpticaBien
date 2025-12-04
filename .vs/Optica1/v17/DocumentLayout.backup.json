@@ -3,48 +3,12 @@
   "WorkspaceRootPath": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\venta\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\venta\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\compra\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\compra\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\empleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\empleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,141 +35,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Producto\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Producto\\Index.cshtml",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Producto\\Index.cshtml",
-              "RelativeToolTip": "Views\\Producto\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwCUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T21:14:21.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Venta\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venta\\Index.cshtml",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Venta\\Index.cshtml",
-              "RelativeToolTip": "Views\\Venta\\Index.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T21:09:51.833Z",
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:31:53.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VentaController.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\VentaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VentaController.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\VentaController.cs",
-              "RelativeToolTip": "Controllers\\VentaController.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAwwD0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T19:29:02.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Venta\\Crear.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venta\\Crear.cshtml",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Venta\\Crear.cshtml",
-              "RelativeToolTip": "Views\\Venta\\Crear.cshtml",
-              "ViewState": "AgIAABgBAAAAAAAAAAAgwDMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T19:18:16.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Compra\\Crear.cshtml",
-              "RelativeDocumentMoniker": "Views\\Compra\\Crear.cshtml",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Compra\\Crear.cshtml",
-              "RelativeToolTip": "Views\\Compra\\Crear.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T18:56:01.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Persona.cs",
-              "RelativeDocumentMoniker": "Models\\Persona.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Persona.cs",
-              "RelativeToolTip": "Models\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:18:39.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Models\\Producto.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Producto.cs",
-              "RelativeToolTip": "Models\\Producto.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:16:52.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAcwBEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:16:36.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ventum.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Ventum.cs",
-              "RelativeDocumentMoniker": "Models\\Ventum.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Models\\Ventum.cs",
-              "RelativeToolTip": "Models\\Ventum.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T04:37:42.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Empleado\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Empleado\\Index.cshtml",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Empleado\\Index.cshtml",
-              "RelativeToolTip": "Views\\Empleado\\Index.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAiwEgAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Index.cshtml",
+              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-03T04:22:00.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmpleadoController.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T04:20:41.118Z"
+              "WhenOpened": "2025-12-04T19:34:05.444Z",
+              "EditorCaption": ""
             }
           ]
         },
