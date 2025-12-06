@@ -71,6 +71,7 @@ wwwroot\img\lacoste.jpg
 wwwroot\img\lentes-contacto.jpg
 wwwroot\img\Logo.jpeg
 wwwroot\img\Montblack.jpg
+wwwroot\img\portada.png
 wwwroot\img\Tous.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

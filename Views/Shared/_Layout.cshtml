@@ -12,6 +12,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!-- 🔹 Estilos públicos de la página principal -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Optica1.styles.css" asp-append-version="true" />
 
     <!-- Iconos -->
@@ -21,120 +23,9 @@
     <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fc;
-            color: #333;
-        }
-
-        /* 🔵 HEADER */
-        header {
-            background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            padding: 8px 0;
-        }
-
-        .navbar-brand img {
-            height: 90px;
-            width: auto;
-            transition: transform 0.3s ease-in-out;
-        }
-
-            .navbar-brand img:hover {
-                transform: scale(1.05);
-            }
-
-        .header-row {
-            align-items: center;
-        }
-
-        /* 🔹 Frase central */
-        .header-center h2 {
-            color: #004aad;
-            font-weight: 600;
-            margin: 5px 0 10px 0;
-            font-size: 1.5rem;
-        }
-
-        /* 🔹 Barra de búsqueda */
-        .search-bar {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-            .search-bar input {
-                width: 70%;
-                max-width: 480px;
-                border-radius: 50px;
-                border: 1.5px solid #ccc;
-                padding: 6px 18px;
-                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-            }
-
-            .search-bar button {
-                border-radius: 50px;
-                padding: 8px 18px;
-                font-weight: 500;
-            }
-
-        /* 🔹 Botón sesión */
-        .btn-outline-primary {
-            border: 2px solid #004aad;
-            color: #004aad;
-            font-weight: 500;
-            border-radius: 10px;
-        }
-
-            .btn-outline-primary:hover {
-                background-color: #004aad;
-                color: white;
-            }
-
-        .btn-outline-danger:hover {
-            background-color: #dc3545;
-            color: white;
-        }
-
-        /* 🔹 Contenido */
-        main {
-            padding: 40px 0 60px 0;
-            min-height: 70vh;
-            animation: fadeIn 0.6s ease-out;
-        }
-
-        /* 🔹 Footer */
-        footer {
-            background-color: #004aad;
-            color: #fff;
-            text-align: center;
-            padding: 25px 0;
-            margin-top: 40px;
-        }
-
-            footer a {
-                color: #a6d3ff;
-                text-decoration: none;
-            }
-
-                footer a:hover {
-                    color: #fff;
-                }
-
-        @@keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    @* Dejas aquí tu <style> interno tal cual lo tienes *@
 </head>
+
 <body>
 
     <!-- 🟦 HEADER -->
@@ -145,13 +36,39 @@
 
                 <!-- 🟦 Columna Izquierda: LOGO -->
                 <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0">
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    @{
+                        // URL por defecto (visitante sin login)
+                        var logoUrl = Url.Action("Index", "Home");
+
+                        if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("administrador"))
+                            {
+                                logoUrl = Url.Action("Index", "Admin");          // Panel admin
+                            }
+                            else if (User.IsInRole("empleado"))
+                            {
+                                logoUrl = Url.Action("Index", "Empleado");       // Pantalla principal empleado
+                            }
+                            else if (User.IsInRole("optometra"))
+                            {
+                                logoUrl = Url.Action("Index", "Optometra");      // Pantalla principal optómetra
+                            }
+                            else if (User.IsInRole("cliente"))
+                            {
+                                logoUrl = Url.Action("Index", "Cliente");        // Pantalla principal cliente
+                            }
+                        }
+                    }
+
+                    <a class="navbar-brand" href="@logoUrl">
                         <img src="~/img/Logo.jpeg" alt="Óptica Lincoln’s"
                              style="height: 150px; width: auto; max-width: 100%; transition: transform 0.3s ease-in-out;"
                              onmouseover="this.style.transform='scale(1.05)';"
                              onmouseout="this.style.transform='scale(1)';" />
                     </a>
                 </div>
+
 
                 <!-- ⚪ Columna Central: Frase + Barra de búsqueda -->
                 <div class="col-12 col-md-6 text-center">
@@ -206,24 +123,29 @@
     </div>
 
     <!-- 🔹 FOOTER -->
-    <footer class="text-center text-lg-start">
-        <div class="container p-4">
-            <div class="row text-start">
-                <div class="col-lg-6 mb-4">
-                    <h5 class="text-uppercase">Óptica Lincoln's</h5>
-                    <p>Expertos en salud visual. Exámenes visuales, asesoría profesional y productos de alta calidad.</p>
+    <footer class="footer-main text-center text-lg-start">
+        <div class="container py-3">
+            <div class="row gy-2 small">
+                <div class="col-lg-4 mb-2">
+                    <h6 class="text-uppercase fw-semibold mb-1">Óptica Lincoln's</h6>
+                    <p class="mb-0">
+                        Expertos en salud visual. Exámenes visuales, asesoría profesional
+                        y productos de alta calidad.
+                    </p>
                 </div>
-                <div class="col-lg-3 mb-4">
-                    <h5 class="text-uppercase">Contacto</h5>
-                    <ul class="list-unstyled">
+
+                <div class="col-lg-4 mb-2">
+                    <h6 class="text-uppercase fw-semibold mb-1">Contacto</h6>
+                    <ul class="list-unstyled mb-0">
                         <li><strong>Teléfono:</strong> 555-123-4567</li>
                         <li><strong>Email:</strong> contacto@opticalincons.com</li>
                         <li><strong>Dirección:</strong> Calle Principal #123, Ciudad</li>
                     </ul>
                 </div>
-                <div class="col-lg-3 mb-4">
-                    <h5 class="text-uppercase">Importante</h5>
-                    <ul class="list-unstyled">
+
+                <div class="col-lg-4 mb-2">
+                    <h6 class="text-uppercase fw-semibold mb-1">Importante</h6>
+                    <ul class="list-unstyled mb-0">
                         <li>Exámenes visuales anuales recomendados.</li>
                         <li>Atención personalizada para toda la familia.</li>
                         <li>Equipos con tecnología de punta.</li>
@@ -231,10 +153,12 @@
                 </div>
             </div>
         </div>
-        <div class="text-center p-3 bg-dark text-white">
+
+        <div class="footer-bottom text-center">
             © 2025 Óptica Lincoln's — Todos los derechos reservados.
         </div>
     </footer>
+
 
     <!-- SCRIPTS -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -242,6 +166,37 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/lib/font-awesome/js/all.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <script>
+            (function () {
+                // URL del logout en tu LoginController
+                const logoutUrl = '@Url.Action("Logout", "Login")';
+                // 3 minutos en milisegundos
+                const INACTIVITY_TIME = 3 * 60 * 1000;
+
+                let inactivityTimer;
+
+                function resetTimer() {
+                    clearTimeout(inactivityTimer);
+                    inactivityTimer = setTimeout(function () {
+                        // Redirige al logout cuando se cumple el tiempo
+                        window.location.href = logoutUrl;
+                    }, INACTIVITY_TIME);
+                }
+
+                // Eventos que cuentan como “actividad”
+                ['click', 'mousemove', 'keydown', 'scroll', 'touchstart'].forEach(function (evt) {
+                    window.addEventListener(evt, resetTimer);
+                });
+
+                // Iniciar el contador al cargar la página
+                resetTimer();
+            })();
+        </script>
+    }
+
 
 </body>
 </html>

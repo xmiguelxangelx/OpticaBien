@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Optica1.Controllers
 {
-    [Authorize(Roles = "administrador")]
+    [Authorize(Roles = "administrador,empleado")]
     public class ReportesController : Controller
     {
         private readonly ProyectoopticaContext _context;

@@ -2,244 +2,207 @@
     ViewData["Title"] = "Óptica Lincoln's - Inicio";
 }
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Óptica Lincoln's</title>
-    <link rel="icon" type="image/png" href="~/img/icono.jpg">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 🔵 HERO VIDEO A PANTALLA ANCHA -->
+<section class="full-width-section mb-5">
+    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video autoplay muted loop>
+                    <source src="~/Videos/visual.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop>
+                    <source src="~/Videos/visual2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop>
+                    <source src="~/Videos/visual3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
-
-        /* 🔹 Carrusel de videos (ya en pantalla completa) */
-        #videoCarousel {
-            width: 100vw;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-        }
-
-            #videoCarousel video {
-                width: 100%;
-                height: 80vh;
-                object-fit: cover;
-            }
-
-        /* ============================
-           SECCIÓN: MARCAS ALIADAS
-        ============================ */
-        .logo-carousel {
-            overflow: hidden;
-            position: relative;
-            background-color: #f8faff;
-            padding: 40px 0;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .logo-carousel-track {
-            display: flex;
-            width: calc(250% + 100px);
-            gap: 80px;
-            animation: scroll 35s linear infinite;
-        }
-
-            .logo-carousel-track img {
-                height: 130px;
-                object-fit: contain;
-                filter: grayscale(40%);
-                transition: transform 0.3s ease, filter 0.3s ease;
-            }
-
-                .logo-carousel-track img:hover {
-                    transform: scale(1.15);
-                    filter: grayscale(0%);
-                }
-
-        /* Animación de desplazamiento continuo */
-        keyframes scroll {
-            0%
-
-        {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-50%);
-        }
-
-        }
-
-        /* ============================
-           SECCIÓN: PRODUCTOS DESTACADOS
-        ============================ */
-        .productos-section {
-            width: 90%;
-            max-width: 1500px;
-            margin: 80px auto;
-        }
-
-        .card-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .card {
-            flex: 1 1 30%;
-            border: none;
-            border-radius: 14px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-            .card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-            }
-
-        .card-img-top {
-            height: 270px;
-            object-fit: cover;
-            border-radius: 14px 14px 0 0;
-        }
-
-       
-        /* ============================
-           RESPONSIVE
-        ============================ */
-        media (max-width: 992px) {
-            .logo-carousel-track img
-
-        {
-            height: 100px;
-        }
-
-        .card {
-            flex: 1 1 45%;
-        }
-
-        }
-
-        media (max-width: 600px) {
-            .logo-carousel-track img
-
-        {
-            height: 80px;
-        }
-
-        .card {
-            flex: 1 1 100%;
-        }
-
-        }
-    </style>
-
-
-</head>
-
-<body>
-
-    <!-- Carrusel de videos -->
-    <section class="mb-5">
-        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <video autoplay muted loop>
-                        <source src="~/Videos/visual.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="carousel-item">
-                    <video autoplay muted loop>
-                        <source src="~/Videos/visual2.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="carousel-item">
-                    <video autoplay muted loop>
-                        <source src="~/Videos/visual3.mp4" type="video/mp4">
-                    </video>
+<!-- 🟢 SERVICIOS PRINCIPALES -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:#004aad;">Nuestros servicios</h2>
+        <p class="text-center text-muted mb-5">
+            Soluciones integrales para el cuidado de tu visión.
+        </p>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card servicios-card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-eye-fill fs-1 mb-3 text-primary"></i>
+                        <h5 class="card-title">Exámenes visuales</h5>
+                        <p class="card-text">Valoraciones completas realizadas por profesionales en optometría.</p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </section>
-
-    <!-- Carrusel de marcas -->
-    <!-- 🔹 MARCAS ALIADAS -->
-    <section class="my-5">
-        <div class="container-fluid text-center">
-            <h2 class="mb-4" style="color:#004aad;">Marcas Aliadas</h2>
-            <div class="logo-carousel">
-                <div class="logo-carousel-track">
-                    <img src="~/img/lacoste.jpg" alt="Lacoste">
-                    <img src="~/img/BOSS.jpg" alt="BOSS">
-                    <img src="~/img/gucci.jpg" alt="Gucci">
-                    <img src="~/img/dior.jpg" alt="Dior">
-                    <img src="~/img/Tous.jpg" alt="Tous">
-                    <img src="~/img/Montblack.jpg" alt="Montblanc">
-                    <!-- duplicamos logos para scroll infinito -->
-                    <img src="~/img/lacoste.jpg" alt="Lacoste">
-                    <img src="~/img/BOSS.jpg" alt="BOSS">
-                    <img src="~/img/gucci.jpg" alt="Gucci">
-                    <img src="~/img/dior.jpg" alt="Dior">
-                    <img src="~/img/Tous.jpg" alt="Tous">
-                    <img src="~/img/Montblack.jpg" alt="Montblanc">
+            <div class="col-md-3">
+                <div class="card servicios-card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-eyeglasses fs-1 mb-3 text-primary"></i>
+                        <h5 class="card-title">Gafas formuladas</h5>
+                        <p class="card-text">Monturas modernas y lentes adaptados a tu fórmula y estilo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card servicios-card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-circle-half fs-1 mb-3 text-primary"></i>
+                        <h5 class="card-title">Lentes de contacto</h5>
+                        <p class="card-text">Opciones cómodas y seguras para tu ritmo de vida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card servicios-card text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-tools fs-1 mb-3 text-primary"></i>
+                        <h5 class="card-title">Ajustes y reparación</h5>
+                        <p class="card-text">Mantenimiento y ajuste de monturas para tu comodidad.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 🔹 PRODUCTOS DESTACADOS -->
-    <section class="productos-section">
-        <h2 class="text-center mb-4" style="color:#004aad;">Productos Destacados</h2>
-        <div class="card-group">
-            <div class="card">
-                <img src="~/img/gafas-sol.jpg" class="card-img-top" alt="Gafas de sol">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Gafas de sol</h5>
-                    <p class="card-text">Protege tus ojos con estilo y calidad. Diseños modernos con filtro UV.</p>
+<!-- 🔷 CTA: AGENDAR CITA -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-3" style="color:#004aad;">Agenda tu cita visual</h2>
+        <p class="mb-4 text-muted">
+            Reserva tu valoración con nuestros especialistas en pocos pasos.
+        </p>
+        <a asp-controller="Citas" asp-action="Crear" class="btn btn-primary btn-lg px-4">
+            <i class="bi bi-calendar-check me-2"></i> Agendar ahora
+        </a>
+    </div>
+</section>
+
+<!-- 🔹 MARCAS ALIADAS (CARRUSEL HORIZONTAL) -->
+<section class="full-width-section py-5 bg-white">
+    <div class="container-fluid text-center">
+        <h2 class="mb-4" style="color:#004aad;">Marcas aliadas</h2>
+        <div class="logo-carousel">
+            <div class="logo-carousel-track">
+                <img src="~/img/lacoste.jpg" alt="Lacoste">
+                <img src="~/img/BOSS.jpg" alt="BOSS">
+                <img src="~/img/gucci.jpg" alt="Gucci">
+                <img src="~/img/dior.jpg" alt="Dior">
+                <img src="~/img/Tous.jpg" alt="Tous">
+                <img src="~/img/Montblack.jpg" alt="Montblanc">
+                <!-- duplicados para scroll infinito -->
+                <img src="~/img/lacoste.jpg" alt="Lacoste">
+                <img src="~/img/BOSS.jpg" alt="BOSS">
+                <img src="~/img/gucci.jpg" alt="Gucci">
+                <img src="~/img/dior.jpg" alt="Dior">
+                <img src="~/img/Tous.jpg" alt="Tous">
+                <img src="~/img/Montblack.jpg" alt="Montblanc">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🟣 PRODUCTOS DESTACADOS -->
+<section class="py-5">
+    <div class="container productos-section">
+        <h2 class="text-center mb-4" style="color:#004aad;">Productos destacados</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card producto-card h-100">
+                    <img src="~/img/gafas-sol.jpg" class="card-img-top" alt="Gafas de sol">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gafas de sol</h5>
+                        <p class="card-text">Protege tus ojos con estilo y filtro UV.</p>
+                        <a asp-controller="Catalogo" asp-action="Index" class="btn btn-outline-primary btn-sm">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="~/img/lentes-contacto.jpg" class="card-img-top" alt="Lentes de contacto">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Lentes de contacto</h5>
-                    <p class="card-text">Cómodos, seguros y adaptados a tus necesidades visuales.</p>
+            <div class="col-md-4">
+                <div class="card producto-card h-100">
+                    <img src="~/img/lentes-contacto.jpg" class="card-img-top" alt="Lentes de contacto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lentes de contacto</h5>
+                        <p class="card-text">Cómodos, seguros y adaptados a ti.</p>
+                        <a asp-controller="Catalogo" asp-action="Index" class="btn btn-outline-primary btn-sm">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="~/img/gafas-formuladas.jpg" class="card-img-top" alt="Gafas formuladas">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Gafas formuladas</h5>
-                    <p class="card-text">Diseños modernos adaptados a tu fórmula y estilo personal.</p>
+            <div class="col-md-4">
+                <div class="card producto-card h-100">
+                    <img src="~/img/gafas-formuladas.jpg" class="card-img-top" alt="Gafas formuladas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gafas formuladas</h5>
+                        <p class="card-text">Diseños modernos adaptados a tu fórmula.</p>
+                        <a asp-controller="Catalogo" asp-action="Index" class="btn btn-outline-primary btn-sm">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    
 
+<!-- ⭐ SECCIÓN: ¿POR QUÉ ELEGIRNOS? -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-4" style="color:#004aad;">¿Por qué elegir Óptica Lincoln’s?</h2>
 
-    
-    
-</body>
-</html>
+        <div class="row g-4">
+
+            <!-- Lista de beneficios -->
+            <div class="col-md-6">
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Atención personalizada por profesionales.
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Equipos modernos para exámenes visuales precisos.
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Amplio catálogo de monturas y lentes para todos los estilos.
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Servicios rápidos, confiables y de alta calidad.
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Acompañamiento en todo tu proceso visual.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Imagen representativa -->
+            <div class="col-md-6 text-center">
+                <img src="~/img/portada.png"
+                     class="img-fluid rounded shadow"
+                     alt="Óptica Lincoln’s"
+                     style="max-height: 260px; object-fit: cover;">
+            </div>
+
+        </div>
+    </div>
+</section>

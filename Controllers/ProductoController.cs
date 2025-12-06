@@ -8,7 +8,8 @@ using System.IO;
 
 namespace Optica1.Controllers
 {
-    [Authorize(Roles = "administrador")]
+    [Authorize(Roles = "administrador,empleado")]
+
     public class ProductoController : Controller
     {
         private readonly ProyectoopticaContext _context;

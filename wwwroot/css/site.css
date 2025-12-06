@@ -20,3 +20,40 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.footer-main {
+    background-color: #004aad; /* azul principal */
+    color: #fff;
+    margin-top: 24px;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+    .footer-main h6 {
+        font-size: 0.95rem;
+        letter-spacing: 0.03em;
+    }
+
+    .footer-main p {
+        margin-bottom: 0;
+    }
+
+    .footer-main ul li {
+        margin-bottom: 0.15rem;
+    }
+
+.footer-bottom {
+    background-color: #00316f; /* azul más oscuro para la franja inferior */
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 6px 0;
+}
+
+/* Mejor vista en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-main {
+        text-align: center;
+    }
+}

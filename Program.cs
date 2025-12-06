@@ -20,12 +20,18 @@ builder.Services.AddAuthentication("Cookies")
     {
         options.LoginPath = "/Login/Index";
         options.AccessDeniedPath = "/Login/AccesoDenegado";
+
+        // ⏰ Tiempo de expiración de la cookie
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(3);
+        options.SlidingExpiration = true; // renueva si hay actividad
     });
+
 
 // MVC
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
 
 // CREAR BD / TABLAS SI NO EXISTEN
 using (var scope = app.Services.CreateScope())

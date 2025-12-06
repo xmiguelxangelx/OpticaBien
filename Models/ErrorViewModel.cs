@@ -1,6 +1,6 @@
 namespace Optica1.Models
 {
-    public class ErrorViewModel
+    public class ValidadorHorarioCitas
     {
         public string? RequestId { get; set; }
 
