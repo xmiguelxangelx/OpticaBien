@@ -1,0 +1,146 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header div img {
+    width: 15vw;
+    height: auto;
+}
+
+header div .col-6 {
+    display: flex;
+    align-items: center;
+}
+
+header div .col svg {
+    width: 2.2vw;
+    height: auto;
+}
+
+header div .col {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding-top: 1vh;
+}
+
+/* 🔵 Sección de video a lo ancho */
+.full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#videoCarousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    #videoCarousel .carousel-item video {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+/* Cards generales dentro de secciones */
+section .card-group {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+    section .card-group .card {
+        margin: 0 3vw;
+    }
+
+/* 🔹 Iconos generales */
+.icon-space {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    color: rgb(6,73,131);
+}
+
+/* 🔹 Carrusel de marcas */
+.logo-carousel {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-carousel-track {
+    display: flex;
+    animation: scroll-left 40s linear infinite;
+}
+
+    .logo-carousel-track img {
+        height: 130px;
+        padding: 0 20px;
+        object-fit: contain;
+        filter: grayscale(40%);
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+        .logo-carousel-track img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-carousel:hover .logo-carousel-track {
+    animation-play-state: paused;
+}
+
+/* 🔹 Secciones específicas */
+.productos-section {
+    max-width: 1200px;
+}
+
+/* Cards de servicios y productos */
+.servicios-card,
+.producto-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .servicios-card:hover,
+    .producto-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    }
+
+    .producto-card img {
+        height: 260px;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+    }
+
+/* 🔸 Responsive */
+@media (max-width: 768px) {
+    #videoCarousel .carousel-item video {
+        height: 50vh;
+    }
+
+    .logo-carousel-track img {
+        height: 90px;
+    }
+}

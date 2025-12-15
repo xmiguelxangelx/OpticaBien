@@ -9,14 +9,15 @@
 <div class="container mt-4">
     <h2 class="text-center mb-4">Lista de Clientes</h2>
 
-    <div class="d-flex justify-content-between mb-3">
+    <!-- BUSCADOR -->
+    <form asp-action="Lista" method="get" class="d-flex justify-content-between mb-3">
         <div class="input-group" style="max-width: 450px;">
             <input type="text"
                    name="buscar"
                    value="@ViewData["BuscarActual"]"
                    class="form-control"
                    placeholder="Buscar por nombre, documento, usuario o correo" />
-            <button type="submit" formaction="@Url.Action("Lista")" formmethod="get" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary">
                 Buscar
             </button>
             <a asp-action="Lista" class="btn btn-outline-secondary">
@@ -25,17 +26,20 @@
         </div>
 
         <div class="btn-group">
-            <a asp-action="Nuevo" class="btn btn-primary">
-                <i class="bi bi-plus-circle"></i> Crear
-            </a>
-            <a asp-action="ExportarExcel" class="btn btn-outline-primary">
-                <i class="bi bi-file-earmark-excel"></i> Exportar Excel
-            </a>
-            <a asp-action="Inactivos" class="btn btn-outline-secondary">
-                Ver inactivos
-            </a>
+            @if (User.IsInRole("administrador"))
+            {
+                <a asp-action="Nuevo" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Crear
+                </a>
+                <a asp-action="ExportarExcel" class="btn btn-outline-primary">
+                    <i class="bi bi-file-earmark-excel"></i> Exportar Excel
+                </a>
+                <a asp-action="Inactivos" class="btn btn-outline-secondary">
+                    Ver inactivos
+                </a>
+            }
         </div>
-    </div>
+    </form>
 
     <table class="table table-bordered table-hover align-middle">
         <thead class="table-light text-center">
@@ -59,6 +63,17 @@
                 .FirstOrDefault()?
                 .IdPerfil;
 
+                // Nombre del rol actual (para vista de solo lectura)
+                string rolNombre = "Sin rol";
+                if (idPerfilActual.HasValue && perfiles != null)
+                {
+                    var perfilActual = perfiles.FirstOrDefault(p => p.IdPerfil == idPerfilActual.Value);
+                    if (perfilActual != null)
+                    {
+                        rolNombre = perfilActual.Descripcion;
+                    }
+                }
+
                 <tr>
                     <td>@persona.IdPersona</td>
                     <td>
@@ -67,9 +82,9 @@
                     </td>
                     <td>@persona.Correo</td>
 
-                    <!-- Columna Rol con combo y botón guardar -->
+                    <!-- Columna Rol -->
                     <td class="text-center">
-                        @if (perfiles != null && usuarioActivo != null)
+                        @if (User.IsInRole("administrador") && perfiles != null && usuarioActivo != null)
                         {
                             <form asp-action="CambiarRol"
                                   method="post"
@@ -96,14 +111,14 @@
                         }
                         else
                         {
-                            <span class="text-muted">Sin usuario</span>
+                            <span>@rolNombre</span>
                         }
                     </td>
 
                     <!-- Acciones -->
                     <td class="text-center">
                         <div class="btn-group" role="group">
-                            <!-- Ver detalle (modal) -->
+                            <!-- Ver detalle (modal): todos los roles -->
                             <button type="button"
                                     class="btn btn-info btn-sm"
                                     data-bs-toggle="modal"
@@ -112,22 +127,28 @@
                                 <i class="bi bi-eye"></i>
                             </button>
 
-                            <!-- Editar datos de persona -->
-                            <a asp-action="Editar"
-                               asp-route-id="@persona.IdPersona"
-                               class="btn btn-primary btn-sm"
-                               title="Editar">
-                                <i class="bi bi-pencil-square"></i>
-                            </a>
+                            <!-- Editar datos básicos: admin y empleado -->
+                            @if (User.IsInRole("administrador") || User.IsInRole("empleado"))
+                            {
+                                <a asp-action="Editar"
+                                   asp-route-id="@persona.IdPersona"
+                                   class="btn btn-primary btn-sm"
+                                   title="Editar datos básicos">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                            }
 
-                            <!-- Inactivar -->
-                            <a asp-action="Inactivar"
-                               asp-route-id="@persona.IdPersona"
-                               class="btn btn-danger btn-sm"
-                               onclick="return confirm('¿Seguro que deseas inactivar este cliente?');"
-                               title="Inactivar">
-                                <i class="bi bi-person-dash"></i>
-                            </a>
+                            <!-- Inactivar: solo administrador -->
+                            @if (User.IsInRole("administrador"))
+                            {
+                                <a asp-action="Inactivar"
+                                   asp-route-id="@persona.IdPersona"
+                                   class="btn btn-danger btn-sm"
+                                   onclick="return confirm('¿Seguro que deseas inactivar este cliente?');"
+                                   title="Inactivar">
+                                    <i class="bi bi-person-dash"></i>
+                                </a>
+                            }
                         </div>
                     </td>
                 </tr>
@@ -186,7 +207,7 @@
                                             <strong>Usuario:</strong> @usuarioActivo.NombreUsuario
                                         </div>
                                         <div class="col-md-6">
-                                            <strong>Contraseña:</strong> @usuarioActivo.Clave
+                                            <strong>Contraseña:</strong> <span class="text-muted">Oculta por seguridad</span>
                                         </div>
                                     </div>
                                 }

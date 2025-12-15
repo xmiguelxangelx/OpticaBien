@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        @* Tarjeta lateral opcional: acceso rápido a historia clínica *@
+        @* Tarjeta lateral: acceso rápido a historia clínica *@
         <div class="col-lg-4">
             <div class="card border-0 rounded-4 shadow-sm h-100">
                 <div class="card-body d-flex flex-column justify-content-between">
@@ -125,9 +125,9 @@
         </div>
     </div>
 
-    @* FILA 2: TARJETAS DE ACCESO RÁPIDO + RESUMEN COMPRAS *@
+    @* FILA 2: HISTORIAL, COMPRAS Y CATÁLOGO/CARRITO *@
     <div class="row g-4">
-        @* Acceso rápido: historial de citas *@
+        @* Historial de citas *@
         <div class="col-md-4">
             <div class="card border-0 rounded-4 shadow-sm h-100">
                 <div class="card-body d-flex flex-column justify-content-between">
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        @* Mis compras (resumen corto + enlace a detalle) *@
+        @* Mis compras *@
         <div class="col-md-4">
             <div class="card border-0 rounded-4 shadow-sm h-100">
                 <div class="card-body d-flex flex-column justify-content-between">
@@ -191,7 +191,7 @@
             </div>
         </div>
 
-        @* Catálogo de productos *@
+        @* Catálogo de productos + botón de carrito *@
         <div class="col-md-4">
             <div class="card border-0 rounded-4 shadow-sm h-100">
                 <div class="card-body d-flex flex-column justify-content-between">
@@ -201,10 +201,18 @@
                             Explora monturas, lentes y otros productos recomendados por tu optómetra.
                         </p>
                     </div>
-                    <a asp-controller="CatalogoCliente" asp-action="Index"
-                       class="btn btn-primary w-100">
-                        Ver catálogo de productos
-                    </a>
+
+                    <div class="d-grid gap-2">
+                        <a asp-controller="CatalogoCliente" asp-action="Index"
+                           class="btn btn-primary w-100">
+                            Ver catálogo de productos
+                        </a>
+
+                        <a asp-controller="Carrito" asp-action="Index"
+                           class="btn btn-outline-primary w-100">
+                            Ver carrito
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

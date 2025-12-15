@@ -1,9 +1,65 @@
 ﻿@model Optica1.Models.Citas
+@using Microsoft.AspNetCore.Mvc.Rendering
 
 <h2>Nueva Cita</h2>
 
 <form asp-action="Crear" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
+
+    @* =======================
+       DATOS DEL PACIENTE
+       ======================= *@
+    @if (User.IsInRole("administrador") || User.IsInRole("empleado"))
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                Datos del paciente
+            </div>
+            <div class="card-body row g-3">
+
+                <div class="form-group col-md-4">
+                    <label for="DocumentoPaciente" class="form-label">Documento del paciente</label>
+                    <input type="text" id="DocumentoPaciente" class="form-control" />
+                    <small class="form-text text-muted">
+                        Escriba el número de documento y salga del campo para buscar.
+                    </small>
+                </div>
+
+                <div class="form-group col-md-8">
+                    <label for="NombrePaciente" class="form-label">Nombre completo</label>
+                    <input type="text" id="NombrePaciente" class="form-control" readonly />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="CorreoPaciente" class="form-label">Correo</label>
+                    <input type="email" id="CorreoPaciente" class="form-control" readonly />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="TelefonoPaciente" class="form-label">Teléfono</label>
+                    <input type="text" id="TelefonoPaciente" class="form-control" readonly />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="DireccionPaciente" class="form-label">Dirección</label>
+                    <input type="text" id="DireccionPaciente" class="form-control" readonly />
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="AnioNacimientoPaciente" class="form-label">Año de nacimiento</label>
+                    <input type="text" id="AnioNacimientoPaciente" class="form-control" readonly />
+                </div>
+
+                @* Este hidden se envía al POST y llena Citas.IdUsuariopaciente *@
+                <input type="hidden" id="IdUsuariopaciente" name="IdUsuariopaciente" />
+                <span asp-validation-for="IdUsuariopaciente" class="text-danger"></span>
+            </div>
+        </div>
+    }
+
+    @* =======================
+       DATOS DE LA CITA
+       ======================= *@
 
     <div class="form-group">
         <label asp-for="Fecha"></label>
@@ -51,4 +107,51 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            // Solo aplica realmente para admin/empleado, pero no pasa nada si el campo no existe
+            $('#DocumentoPaciente').on('blur', function () {
+                var doc = $(this).val().trim();
+                if (!doc) {
+                    limpiarCamposPaciente();
+                    return;
+                }
+
+                $.get('@Url.Action("BuscarPacientePorDocumento", "Cita")', { documento: doc })
+                    .done(function (respuesta) {
+                        if (!respuesta.encontrado) {
+                            alert('No se encontró un paciente con ese documento.');
+                            limpiarCamposPaciente();
+                            return;
+                        }
+
+                        var p = respuesta.paciente;
+                        $('#NombrePaciente').val(p.nombreCompleto);
+                        $('#CorreoPaciente').val(p.correo);
+                        $('#TelefonoPaciente').val(p.telefono);
+                        $('#DireccionPaciente').val(p.direccion);
+                        $('#AnioNacimientoPaciente').val(p.anioNacimiento ? p.anioNacimiento : '');
+
+                        // Este valor se envía al servidor: Citas.IdUsuariopaciente
+                        $('#IdUsuariopaciente').val(p.idUsuario);
+                    })
+                    .fail(function () {
+                        alert('Error al consultar el paciente.');
+                        limpiarCamposPaciente();
+                    });
+            });
+
+            function limpiarCamposPaciente() {
+                $('#NombrePaciente').val('');
+                $('#CorreoPaciente').val('');
+                $('#TelefonoPaciente').val('');
+                $('#DireccionPaciente').val('');
+                $('#AnioNacimientoPaciente').val('');
+                $('#IdUsuariopaciente').val('');
+            }
+        });
+    </script>
 }

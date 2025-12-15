@@ -4,8 +4,15 @@
 }
 
 <div class="container py-4">
-    <div class="text-center mb-4">
-        <h2 class="fw-bold text-primary">Panel del Optómetra</h2>
+
+    <!-- Encabezado tipo cliente -->
+    <div class="mb-4">
+        <h2 class="fw-bold">
+            Hola Optómetra @Model.NombreOptometra 👓
+        </h2>
+        <p class="text-muted mb-1">
+            Desde aquí puedes gestionar tus citas del día, revisar historias clínicas y consultar a tus pacientes.
+        </p>
         <p class="text-muted">
             Gestión clínica diaria · @Model.FechaHoy.ToString("dd/MM/yyyy")
         </p>
@@ -47,7 +54,7 @@
         </div>
     </div>
 
-    <!-- Módulos principales (tarjetas tipo admin) -->
+    <!-- Módulos principales -->
     <div class="row g-3">
         <!-- Gestión de Citas -->
         <div class="col-md-6">
@@ -85,15 +92,16 @@
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title fw-bold mb-2">Pacientes</h5>
                     <p class="card-text text-muted flex-grow-1">
-                        Consulte los datos de sus pacientes, su historial de citas y evolución clínica.
+                        Consulte los datos de sus pacientes del día, su horario de cita y motivo de consulta.
                     </p>
-                    <!-- Ajusta el controlador/acción según tu proyecto -->
-                    <a asp-controller="Persona" asp-action="Index" class="btn btn-outline-secondary mt-auto">
-                        Ver Pacientes
+                    <a asp-controller="Optometra" asp-action="MisPacientes" class="btn btn-outline-secondary mt-auto">
+                        Ver Pacientes del día
                     </a>
                 </div>
             </div>
         </div>
+
+
 
         <!-- Reportes Clínicos -->
         <div class="col-md-6">
@@ -103,7 +111,6 @@
                     <p class="card-text text-muted flex-grow-1">
                         Revise rápidamente su productividad diaria: citas atendidas, canceladas y pendientes.
                     </p>
-                    <!-- Puedes crear luego un controlador específico, por ahora apunta a Cita/Index con filtros -->
                     <a asp-controller="Cita" asp-action="Index" class="btn btn-outline-secondary mt-auto">
                         Ver Reportes
                     </a>

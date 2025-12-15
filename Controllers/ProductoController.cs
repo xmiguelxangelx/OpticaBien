@@ -5,11 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using Optica1.Models;
 using ClosedXML.Excel;
 using System.IO;
+using System.Threading.Tasks;
+using System.Linq;
+using System;
 
 namespace Optica1.Controllers
 {
     [Authorize(Roles = "administrador,empleado")]
-
     public class ProductoController : Controller
     {
         private readonly ProyectoopticaContext _context;
@@ -34,8 +36,9 @@ namespace Optica1.Controllers
         }
 
         // ============================
-        // LISTADO INACTIVOS
+        // LISTADO INACTIVOS (SOLO ADMIN)
         // ============================
+        [Authorize(Roles = "administrador")]
         public async Task<IActionResult> Inactivos()
         {
             var productos = await _context.Productos
@@ -68,6 +71,22 @@ namespace Optica1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Crear(Producto model)
         {
+            // Validaciones de negocio
+            if (model.Precio <= 0)
+                ModelState.AddModelError("Precio", "El precio debe ser mayor que cero.");
+
+            if (model.Stock.HasValue && model.Stock < 0)
+                ModelState.AddModelError("Stock", "El stock no puede ser negativo.");
+
+            if (model.StockMinimo.HasValue && model.StockMinimo < 0)
+                ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser negativo.");
+
+            if (model.Stock.HasValue && model.StockMinimo.HasValue &&
+                model.StockMinimo > model.Stock)
+            {
+                ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser mayor al stock actual.");
+            }
+
             if (!ModelState.IsValid)
             {
                 ViewBag.Proveedores = new SelectList(
@@ -116,6 +135,22 @@ namespace Optica1.Controllers
         {
             if (id != model.IdProducto) return NotFound();
 
+            // Validaciones de negocio
+            if (model.Precio <= 0)
+                ModelState.AddModelError("Precio", "El precio debe ser mayor que cero.");
+
+            if (model.Stock.HasValue && model.Stock < 0)
+                ModelState.AddModelError("Stock", "El stock no puede ser negativo.");
+
+            if (model.StockMinimo.HasValue && model.StockMinimo < 0)
+                ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser negativo.");
+
+            if (model.Stock.HasValue && model.StockMinimo.HasValue &&
+                model.StockMinimo > model.Stock)
+            {
+                ModelState.AddModelError("StockMinimo", "El stock mínimo no puede ser mayor al stock actual.");
+            }
+
             if (!ModelState.IsValid)
             {
                 ViewBag.Proveedores = new SelectList(
@@ -150,8 +185,9 @@ namespace Optica1.Controllers
         }
 
         // ============================
-        // INACTIVAR
+        // INACTIVAR (SOLO ADMIN)
         // ============================
+        [Authorize(Roles = "administrador")]
         public async Task<IActionResult> Inactivar(int id)
         {
             var producto = await _context.Productos.FindAsync(id);
@@ -166,8 +202,9 @@ namespace Optica1.Controllers
         }
 
         // ============================
-        // ACTIVAR
+        // ACTIVAR (SOLO ADMIN)
         // ============================
+        [Authorize(Roles = "administrador")]
         public async Task<IActionResult> Activar(int id)
         {
             var producto = await _context.Productos.FindAsync(id);
@@ -182,9 +219,10 @@ namespace Optica1.Controllers
         }
 
         // ============================
-        // EXPORTAR INVENTARIO A EXCEL
+        // EXPORTAR INVENTARIO A EXCEL (SOLO ADMIN)
         // ============================
         [HttpGet]
+        [Authorize(Roles = "administrador")]
         public async Task<IActionResult> ExportarInventario()
         {
             var productos = await _context.Productos

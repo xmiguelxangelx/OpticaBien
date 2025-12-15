@@ -9,7 +9,10 @@ namespace Optica1.Models
         public int PacientesAtendidosHoy { get; set; }
         public int HistoriasClinicasHoy { get; set; }
 
-        // Opcional: rango de fechas mostrado
+        // Fecha de referencia
         public DateTime FechaHoy { get; set; } = DateTime.Today;
+
+        // NUEVO: nombre para el saludo
+        public string NombreOptometra { get; set; }
     }
 }

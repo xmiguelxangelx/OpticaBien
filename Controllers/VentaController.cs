@@ -97,19 +97,69 @@ namespace Optica1.Controllers
         // ============================
         [HttpGet]
         [Authorize(Roles = "administrador,empleado")]
-        public async Task<IActionResult> Crear()
+        public async Task<IActionResult> Crear(int? idProducto)
         {
+            // Clientes activos con rol "cliente"
+            var clientesQuery = _context.Usuarios
+                .Include(u => u.IdPersonaNavigation)
+                .Include(u => u.UsuarioPerfils)
+                    .ThenInclude(up => up.IdPerfilNavigation)
+                .Where(u =>
+                    u.Estado == "Activo" &&
+                    u.UsuarioPerfils.Any(up => up.IdPerfilNavigation.Descripcion == "cliente"));
+
+            var listaClientes = await clientesQuery
+                .Select(u => new
+                {
+                    u.IdUsuario,
+                    NombreMostrar = u.IdPersonaNavigation == null
+                        ? u.NombreUsuario
+                        : string.Join(" ",
+                            new[]
+                            {
+                                u.IdPersonaNavigation.PrimerNombre,
+                                u.IdPersonaNavigation.SegundoNombre,
+                                u.IdPersonaNavigation.PrimerApellido,
+                                u.IdPersonaNavigation.SegundoApellido
+                            }.Where(s => !string.IsNullOrWhiteSpace(s)))
+                })
+                .OrderBy(x => x.NombreMostrar)
+                .ToListAsync();
+
             ViewBag.Clientes = new SelectList(
-                await _context.Usuarios.ToListAsync(),
+                listaClientes,
                 "IdUsuario",
-                "NombreUsuario"
+                "NombreMostrar"
             );
 
+            // Productos activos
+            var productos = await _context.Productos
+                .Where(p => p.Estado == "Activo" || p.Estado == null)
+                .OrderBy(p => p.Nombre)
+                .ToListAsync();
+
             ViewBag.Productos = new SelectList(
-                await _context.Productos.ToListAsync(),
+                productos,
                 "IdProducto",
                 "Nombre"
             );
+
+            // Si venimos desde el catálogo con un idProducto,
+            // preparamos datos para autocompletar la primera línea en la vista.
+            if (idProducto.HasValue)
+            {
+                var prod = await _context.Productos
+                    .FirstOrDefaultAsync(p =>
+                        p.IdProducto == idProducto.Value &&
+                        (p.Estado == "Activo" || p.Estado == null));
+
+                if (prod != null)
+                {
+                    ViewBag.ProductoInicialId = prod.IdProducto;
+                    ViewBag.ProductoInicialNombre = prod.Nombre;
+                    ViewBag.ProductoInicialPrecio = prod.Precio ?? 0;
+                }
+            }
 
             return View();
         }

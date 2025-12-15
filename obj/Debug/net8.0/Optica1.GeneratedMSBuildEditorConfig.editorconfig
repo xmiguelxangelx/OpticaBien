@@ -34,6 +34,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Carrito/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/CatalogoCliente/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29DbGllbnRlXERldGFsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/CatalogoCliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29DbGllbnRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -138,6 +146,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0b21ldHJhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Optometra/MisPacientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3B0b21ldHJhXE1pc1BhY2llbnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/PerfilControlador/editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsQ29udHJvbGFkb3JcZWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -170,6 +182,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Producto/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Producto/Inactivos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5hY3Rpdm9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -200,6 +216,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Shared/_CarritoMini.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJyaXRvTWluaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Documents/Programacion Software/Diseño WEB/WEB.NET_II/OpticaBien/Views/Shared/_ValidationScriptsPartial.cshtml]

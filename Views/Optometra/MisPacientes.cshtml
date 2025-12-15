@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Optica1.Models.PacienteDelDiaViewModel>
+
+@{
+    ViewData["Title"] = "Pacientes del día";
+}
+
+<div class="container py-4">
+    <div class="mb-4">
+        <h2 class="fw-bold">Pacientes del día</h2>
+        <p class="text-muted">
+            Listado de pacientes con cita asignada para hoy.
+        </p>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Paciente</th>
+                <th>Documento</th>
+                <th>Edad</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Motivo</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="9" class="text-center text-muted">
+                        No tienes pacientes programados para hoy.
+                    </td>
+                </tr>
+            }
+            else
+            {
+                foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@p.HoraCita.ToString(@"hh\:mm")</td>
+                        <td>@p.NombrePaciente</td>
+                        <td>@p.Documento</td>
+                        <td>@(p.Edad.HasValue? p.Edad + " años" : "-")</td>
+                        <td>@p.Telefono</td>
+                        <td>@p.Correo</td>
+                        <td>@p.Motivo</td>
+                        <td>@p.Estado</td>
+                        <td>
+                            @* Ir a la cita específica *@
+                            <a asp-controller="Cita" asp-action="Editar" asp-route-id="@p.IdCita"
+                               class="btn btn-sm btn-primary me-1">
+                                Ver cita
+                            </a>
+
+                            @* Ver historias clínicas del módulo (ajusta la acción si tienes una específica por paciente) *@
+                            <a asp-controller="Historiaclinica" asp-action="Index"
+                               class="btn btn-sm btn-outline-secondary">
+                                Ver historias
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <a asp-controller="Optometra" asp-action="Index" class="btn btn-secondary">
+        Volver al panel
+    </a>
+</div>

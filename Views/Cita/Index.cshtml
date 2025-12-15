@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<Optica1.Models.Citas>
 @using System
+@using System.Linq
 
 @{
     ViewData["Title"] = "Mis Citas";
@@ -82,9 +83,22 @@
                             <td>@c.Hora.ToString(@"hh\:mm")</td>
                             <td>@c.Motivo</td>
                             <td>@c.Estado</td>
-                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
                             <td>
-                                @if (puedeGestionar)
+                                @(
+                                                    c.IdUsuarioempleadoNavigation?.IdPersonaNavigation == null
+                                                    ? c.IdUsuarioempleadoNavigation?.NombreUsuario
+                                                    : string.Join(" ",
+                                                    new[]
+                                                    {
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerApellido,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoApellido
+                                                    }.Where(s => !string.IsNullOrWhiteSpace(s)))
+                                                    )
+                </td>
+                <td>
+                    @if (puedeGestionar)
                                 {
                                     <a asp-action="Editar" asp-route-id="@c.IdCita"
                                        class="btn btn-sm btn-warning me-1">Editar</a>
@@ -141,9 +155,22 @@
                             <td>@c.Hora.ToString(@"hh\:mm")</td>
                             <td>@c.Motivo</td>
                             <td>@c.Estado</td>
-                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
-                        </tr>
-                    }
+                            <td>
+                                @(
+                                                    c.IdUsuarioempleadoNavigation?.IdPersonaNavigation == null
+                                                    ? c.IdUsuarioempleadoNavigation?.NombreUsuario
+                                                    : string.Join(" ",
+                                                    new[]
+                                                    {
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerApellido,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoApellido
+                                                    }.Where(s => !string.IsNullOrWhiteSpace(s)))
+                                                    )
+                </td>
+            </tr>
+                        }
                 }
             </tbody>
         </table>
@@ -183,11 +210,37 @@
                             <td>@c.Hora.ToString(@"hh\:mm")</td>
                             <td>@c.Motivo</td>
                             <td>@c.Estado</td>
-                            <td>@c.IdUsuariopacienteNavigation?.NombreUsuario</td>
-                            <td>@c.IdUsuarioempleadoNavigation?.NombreUsuario</td>
                             <td>
-                                @* Botón para cambiar estado: solo admin / empleado / optometra *@
-                                @if (User.IsInRole("administrador") || User.IsInRole("empleado") || User.IsInRole("optometra"))
+                                @(
+                                                    c.IdUsuariopacienteNavigation?.IdPersonaNavigation == null
+                                                    ? c.IdUsuariopacienteNavigation?.NombreUsuario
+                                                    : string.Join(" ",
+                                                    new[]
+                                                    {
+                                        c.IdUsuariopacienteNavigation.IdPersonaNavigation.PrimerNombre,
+                                        c.IdUsuariopacienteNavigation.IdPersonaNavigation.SegundoNombre,
+                                        c.IdUsuariopacienteNavigation.IdPersonaNavigation.PrimerApellido,
+                                        c.IdUsuariopacienteNavigation.IdPersonaNavigation.SegundoApellido
+                                                    }.Where(s => !string.IsNullOrWhiteSpace(s)))
+                                                    )
+                            </td>
+                            <td>
+                                @(
+                                                    c.IdUsuarioempleadoNavigation?.IdPersonaNavigation == null
+                                                    ? c.IdUsuarioempleadoNavigation?.NombreUsuario
+                                                    : string.Join(" ",
+                                                    new[]
+                                                    {
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoNombre,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.PrimerApellido,
+                                        c.IdUsuarioempleadoNavigation.IdPersonaNavigation.SegundoApellido
+                                                    }.Where(s => !string.IsNullOrWhiteSpace(s)))
+                                                    )
+                </td>
+                <td>
+                    @* Botón para cambiar estado: solo admin / empleado / optometra *@
+                    @if (User.IsInRole("administrador") || User.IsInRole("empleado") || User.IsInRole("optometra"))
                                 {
                                     <a asp-action="CambiarEstado" asp-route-id="@c.IdCita"
                                        class="btn btn-sm btn-info me-1">Estado</a>
@@ -196,15 +249,19 @@
                                 <a asp-action="Editar" asp-route-id="@c.IdCita"
                                    class="btn btn-sm btn-warning me-1">Editar</a>
 
-                                <form asp-action="Eliminar" asp-route-id="@c.IdCita"
-                                      method="post" class="d-inline">
-                                    @Html.AntiForgeryToken()
-                                    <button type="submit"
-                                            class="btn btn-sm btn-danger"
-                                            onclick="return confirm('¿Seguro que deseas cancelar esta cita?');">
-                                        Eliminar
-                                    </button>
-                                </form>
+                                @* Eliminar: SOLO administrador (empleado ya no ve este botón) *@
+                                @if (User.IsInRole("administrador"))
+                                {
+                                    <form asp-action="Eliminar" asp-route-id="@c.IdCita"
+                                          method="post" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit"
+                                                class="btn btn-sm btn-danger"
+                                                onclick="return confirm('¿Seguro que deseas cancelar esta cita?');">
+                                            Eliminar
+                                        </button>
+                                    </form>
+                                }
                             </td>
                         </tr>
                     }

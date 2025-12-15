@@ -102,6 +102,87 @@ namespace Optica1.Controllers
         }
 
         // =====================================================
+        // NUEVO: BUSCAR PACIENTE POR DOCUMENTO (AJAX)
+        // =====================================================
+
+        [HttpGet]
+        [Authorize(Roles = "administrador,empleado")]
+        public async Task<IActionResult> BuscarPacientePorDocumento(string documento)
+        {
+            if (string.IsNullOrWhiteSpace(documento))
+            {
+                return Json(new { encontrado = false });
+            }
+
+            // IdPersona es long -> parseamos el string
+            if (!long.TryParse(documento, out var docNumero))
+            {
+                return Json(new { encontrado = false });
+            }
+
+            // 1) Traemos persona y usuario asociados
+            var datos = await (
+                from p in _context.Personas
+                join u in _context.Usuarios on p.IdPersona equals u.IdPersona
+                where p.IdPersona == docNumero
+                select new
+                {
+                    Persona = p,
+                    Usuario = u
+                }
+            ).FirstOrDefaultAsync();
+
+            if (datos == null)
+            {
+                // No hay persona+usuario con ese documento
+                return Json(new { encontrado = false });
+            }
+
+            var persona = datos.Persona;
+            var usuario = datos.Usuario;
+
+            // 2) Calculamos año de nacimiento en memoria (evitamos problemas de traducción)
+            int? anioNacimiento = null;
+            try
+            {
+                // Ajusta según el tipo real de FechaNacimiento:
+                // - Si es DateTime?      -> persona.FechaNacimiento?.Year
+                // - Si es DateOnly?      -> persona.FechaNacimiento?.Year
+                // - Si es string (yyyy)  -> int.Parse(persona.FechaNacimiento)
+                anioNacimiento = persona.FechaNacimiento != null
+                    ? persona.FechaNacimiento.Value.Year
+                    : (int?)null;
+            }
+            catch
+            {
+                anioNacimiento = null;
+            }
+
+            // 3) Construimos el objeto plano que viaja al front
+            var paciente = new
+            {
+                idUsuario = usuario.IdUsuario,
+                documento = persona.IdPersona.ToString(),
+                nombreCompleto = string.Join(" ",
+                    new[]
+                    {
+                persona.PrimerNombre,
+                persona.SegundoNombre,
+                persona.PrimerApellido,
+                persona.SegundoApellido
+                    }.Where(s => !string.IsNullOrWhiteSpace(s))),
+                correo = persona.Correo,
+                telefono = persona.Telefono,
+                direccion = persona.Direccion,
+                anioNacimiento = anioNacimiento
+            };
+
+            return Json(new { encontrado = true, paciente });
+        }
+
+
+
+        // =====================================================
         // INDEX
         // =====================================================
 
@@ -113,7 +194,9 @@ namespace Optica1.Controllers
 
             var query = _context.Citas
                 .Include(c => c.IdUsuariopacienteNavigation)
+                    .ThenInclude(u => u.IdPersonaNavigation)
                 .Include(c => c.IdUsuarioempleadoNavigation)
+                    .ThenInclude(u => u.IdPersonaNavigation)
                 .AsQueryable();
 
             // solo citas activas
@@ -135,6 +218,7 @@ namespace Optica1.Controllers
 
             return View(lista);
         }
+
 
         // =====================================================
         // CITAS INACTIVAS
@@ -232,9 +316,18 @@ namespace Optica1.Controllers
 
             model.Estado = "Pendiente";
 
+            // Cliente: siempre él mismo
             if (User.IsInRole("cliente"))
             {
                 model.IdUsuariopaciente = usuario.IdUsuario;
+            }
+            else
+            {
+                // Admin / Empleado: obligatorio seleccionar paciente (por documento)
+                if (!model.IdUsuariopaciente.HasValue || model.IdUsuariopaciente == 0)
+                {
+                    ModelState.AddModelError("IdUsuariopaciente", "Debe seleccionar un paciente ingresando el documento.");
+                }
             }
 
             // Hora desde select
@@ -354,14 +447,12 @@ namespace Optica1.Controllers
                 .AsNoTracking()
                 .FirstOrDefaultAsync(c => c.IdCita == id);
 
-
             if (citaDb == null) return NotFound();
-
 
             if (User.IsInRole("cliente") && citaDb.IdUsuariopaciente != usuario.IdUsuario)
                 return Forbid();
 
-            // 🔹 Nueva regla para EMPLEADO:
+            // Nueva regla para EMPLEADO:
             if (User.IsInRole("empleado"))
             {
                 // No permitir editar citas atendidas o de fechas pasadas
@@ -486,7 +577,6 @@ namespace Optica1.Controllers
                 return Forbid();
 
             // Por simplicidad y tiempo, permitimos que el empleado/admin cancelen cualquier cita
-            // (si luego quieres, volvemos a poner reglas por fecha/estado)
             cita.Estado = "Inactiva";
 
             _context.Citas.Update(cita);
@@ -552,8 +642,5 @@ namespace Optica1.Controllers
             TempData["Mensaje"] = "El estado de la cita se actualizó correctamente.";
             return RedirectToAction(nameof(Index));
         }
-
-
-
     }
 }

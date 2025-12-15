@@ -1,0 +1,44 @@
+﻿@model List<Optica1.Models.CarritoItemViewModel>
+@using System.Linq
+
+<div class="card border-0 rounded-4 shadow-sm h-100">
+    <div class="card-body">
+        <h5 class="fw-bold mb-2">Mi carrito</h5>
+        <p class="text-muted mb-3">
+            Productos añadidos desde el catálogo.
+        </p>
+
+        @if (Model == null || !Model.Any())
+        {
+            <p class="text-muted mb-0">
+                Tu carrito está vacío.
+            </p>
+        }
+        else
+        {
+            <ul class="list-group list-group-flush mb-3">
+                @foreach (var item in Model.Take(3))
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <span>@item.Nombre (x@item.Cantidad)</span>
+                        <span class="fw-bold">
+                            $@(item.Precio* item.Cantidad)
+                        </span>
+                    </li>
+                }
+            </ul>
+
+            <div class="d-flex justify-content-between mb-2">
+                <span class="fw-bold">Total aprox.</span>
+                <span class="fw-bold">
+                    $@Model.Sum(x => x.Precio * x.Cantidad)
+                </span>
+            </div>
+
+            <a asp-controller="Carrito" asp-action="Index"
+               class="btn btn-outline-primary w-100">
+                Ver carrito completo
+            </a>
+        }
+    </div>
+</div>

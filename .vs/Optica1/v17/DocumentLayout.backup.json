@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{311E93E4-9917-499B-B11A-F965D37ECE62}|..\\Optica1.Tests\\Optica1.Tests.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\optica1.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\catalogocliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\catalogocliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\services\\validadorhorariocitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:services\\validadorhorariocitas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\services\\calculadoraventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:services\\calculadoraventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|e:\\documents\\programacion software\\dise\u00F1o web\\web.net_ii\\opticabien\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AD750432-697C-6DAC-CB7E-836B79DC3807}|Optica1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,41 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CalculadoraVentas.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Services\\CalculadoraVentas.cs",
-              "RelativeDocumentMoniker": "Services\\CalculadoraVentas.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Services\\CalculadoraVentas.cs",
-              "RelativeToolTip": "Services\\CalculadoraVentas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T18:26:39.229Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\CatalogoCliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\CatalogoCliente\\Index.cshtml",
+              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\CatalogoCliente\\Index.cshtml",
+              "RelativeToolTip": "Views\\CatalogoCliente\\Index.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:41:11.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ValidadorHorarioCitas.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Services\\ValidadorHorarioCitas.cs",
-              "RelativeDocumentMoniker": "Services\\ValidadorHorarioCitas.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Services\\ValidadorHorarioCitas.cs",
-              "RelativeToolTip": "Services\\ValidadorHorarioCitas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T18:26:33.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Test1.cs",
-              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\Optica1.Tests\\Test1.cs",
-              "RelativeDocumentMoniker": "..\\Optica1.Tests\\Test1.cs",
-              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\Optica1.Tests\\Test1.cs",
-              "RelativeToolTip": "..\\Optica1.Tests\\Test1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T18:06:09.071Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Documents\\Programacion Software\\Dise\u00F1o WEB\\WEB.NET_II\\OpticaBien\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAAAI8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:35:26.409Z",
               "EditorCaption": ""
             }
           ]

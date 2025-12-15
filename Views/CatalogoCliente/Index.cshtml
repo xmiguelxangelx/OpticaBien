@@ -1,19 +1,142 @@
-﻿<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Stock</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var p in Model)
-        {
-            <tr>
-                <td>@p.Nombre</td>
-                <td>@(p.Precio ?? 0)</td>
-                <td>@(p.Stock ?? 0)</td>
-            </tr>
-        }
-    </tbody>
-</table>
+﻿@model IEnumerable<Optica1.Models.Producto>
+
+@{
+    ViewData["Title"] = "Catálogo de productos";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Catálogo de productos</h2>
+
+    <!-- BUSCADOR -->
+    <form asp-action="Index" method="get" class="d-flex justify-content-between mb-3">
+        <div class="input-group" style="max-width: 450px;">
+            <input type="text"
+                   name="buscar"
+                   value="@ViewData["BuscarActual"]"
+                   class="form-control"
+                   placeholder="Buscar por nombre, tipo, marca o descripción" />
+            <button type="submit" class="btn btn-primary">
+                Buscar
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                Limpiar
+            </a>
+        </div>
+    </form>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            No se encontraron productos disponibles para mostrar en el catálogo.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var p in Model)
+            {
+                <div class="col-md-4 col-lg-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+
+                            <!-- ICONO "DE LUJO" POR TIPO / NOMBRE -->
+                            <div class="mb-3 d-flex justify-content-center">
+                                @{
+                                    var tipoLower = p.Tipo?.ToLower() ?? "";
+                                    var nombreLower = p.Nombre?.ToLower() ?? "";
+                                }
+
+                                <div class="d-inline-flex align-items-center justify-content-center rounded-circle border border-2"
+                                     style="width: 70px; height: 70px;">
+
+                                    @* Monturas *@
+                                    @if (tipoLower.Contains("montura") || nombreLower.Contains("gafa"))
+                                    {
+                                        <i class="bi bi-eyeglasses text-primary" style="font-size: 2rem;"></i>
+                                    }
+                                    @* BlueLight *@
+                                    else if (nombreLower.Contains("blue"))
+                                    {
+                                        <i class="bi bi-lightning text-info" style="font-size: 2rem;"></i>
+                                    }
+                                    @* Económico *@
+                                    else if (nombreLower.Contains("económico") || nombreLower.Contains("economico"))
+                                    {
+                                        <i class="bi bi-cash-coin text-success" style="font-size: 2rem;"></i>
+                                    }
+                                    @* Premium / 4K *@
+                                    else if (nombreLower.Contains("premium") || nombreLower.Contains("4k"))
+                                    {
+                                        <i class="bi bi-star-fill text-warning" style="font-size: 2rem;"></i>
+                                    }
+                                    @* Transitions / Fotocromático *@
+                                    else if (nombreLower.Contains("transition") || nombreLower.Contains("fotocrom"))
+                                    {
+                                        <i class="bi bi-brightness-high text-warning" style="font-size: 2rem;"></i>
+                                    }
+                                    @* Lentes genéricos *@
+                                    else if (tipoLower.Contains("lente"))
+                                    {
+                                        <i class="bi bi-circle text-primary" style="font-size: 2rem;"></i>
+                                    }
+                                    @* Por defecto *@
+                                    else
+                                    {
+                                        <i class="bi bi-box-seam text-secondary" style="font-size: 2rem;"></i>
+                                    }
+
+                                </div>
+                            </div>
+
+                            <h5 class="fw-bold">@p.Nombre</h5>
+
+                            @if (!string.IsNullOrWhiteSpace(p.Marca))
+                            {
+                                <p class="text-muted mb-1">@p.Marca</p>
+                            }
+
+                            @if (!string.IsNullOrWhiteSpace(p.Tipo))
+                            {
+                                <span class="badge bg-light text-dark mb-2">@p.Tipo</span>
+                            }
+
+                            <p class="fw-bold text-success mt-2 mb-2">
+                                $@p.Precio
+                            </p>
+
+                            <p class="small text-muted" style="min-height: 40px;">
+                                @if (!string.IsNullOrWhiteSpace(p.Descripcion) && p.Descripcion.Length > 80)
+                                {
+                                    @p.Descripcion.Substring(0, 80) @("...")
+                                }
+                                else
+                                {
+                                    @p.Descripcion
+                                }
+                            </p>
+
+                            <span class="badge bg-success mb-3">
+                                Disponible (@(p.Stock ?? 0) en stock)
+                            </span>
+
+                            <div class="d-grid gap-2">
+                                <a asp-action="Detalle"
+                                   asp-route-id="@p.IdProducto"
+                                   class="btn btn-outline-primary btn-sm">
+                                    Ver detalle
+                                </a>
+
+                                <a asp-controller="Carrito"
+                                   asp-action="Agregar"
+                                   asp-route-idProducto="@p.IdProducto"
+                                   class="btn btn-primary btn-sm">
+                                    Añadir al carrito
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

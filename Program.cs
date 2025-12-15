@@ -20,18 +20,21 @@ builder.Services.AddAuthentication("Cookies")
     {
         options.LoginPath = "/Login/Index";
         options.AccessDeniedPath = "/Login/AccesoDenegado";
-
-        // ⏰ Tiempo de expiración de la cookie
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(3);
-        options.SlidingExpiration = true; // renueva si hay actividad
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(60);   // ajusta si quieres
+        options.SlidingExpiration = true;
     });
 
-
-// MVC
+// MVC + SESSION (para carrito)
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(60);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
+var app = builder.Build();
 
 // CREAR BD / TABLAS SI NO EXISTEN
 using (var scope = app.Services.CreateScope())
@@ -52,7 +55,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();   // ✔ necesario
+app.UseSession();          // importante para el carrito
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
