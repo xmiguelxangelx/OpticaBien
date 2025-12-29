@@ -1,68 +1,69 @@
 # Óptica Lincoln’s 👓
 
-Sistema web para la gestión y presencia digital de **Óptica Lincoln’s**, desarrollado como proyecto práctico con enfoque en necesidades reales del negocio.
+Sistema web para la gestión operativa y administrativa de una óptica, desarrollado con **ASP.NET** y persistencia en base de datos.
 
-El proyecto busca centralizar la información de la óptica, optimizar procesos internos y servir como base para futuras funcionalidades como gestión de clientes, productos y citas.
+El proyecto permite administrar productos, inventario y datos del negocio, simulando un entorno real de trabajo para una óptica en operación.
 
 ---
 
-##  Características principales
+##  Funcionalidades implementadas
 
-- Página web informativa de la óptica  
-- Catálogo de productos (monturas y lentes)
-- Información de servicios ópticos
-- Diseño responsive
-- Arquitectura modular en JavaScript
-- Código escalable y mantenible
+- Gestión de productos ópticos
+- Control de inventario
+- Persistencia de datos en base de datos
+- Operaciones CRUD
+- Arquitectura por capas
+- Separación de responsabilidades (Models, Services, Data)
+- Aplicación web funcional
 
 ---
 
 ##  Tecnologías utilizadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (ES6+)**
-- *(Opcional / futuro)*  
-  - Framework frontend (Angular)
-  - Backend y base de datos
-  - Autenticación de usuarios
+- **C#**
+- **ASP.NET**
+- **Entity Framework Core**
+- **Base de datos relacional**
+- **HTML / CSS**
+- **JavaScript**
+
+---
+
+##  Base de datos
+
+El proyecto utiliza **Entity Framework Core** con migraciones para la gestión del esquema de base de datos.
+
+Estructura principal:
+- Models
+- Migrations
+- DbContext
+- Relación entre entidades
+- Persistencia y consultas
 
 ---
 
 ##  Estructura del proyecto
-optica-lincolns/
+
+Optica/
 │
-├── index.html
-├── css/
-│ └── styles.css
-├── js/
-│ ├── main.js
-│ └── modules/
-│ ├── productos.js
-│ ├── servicios.js
-│ └── contacto.js
-├── assets/
-│ └── images/
+├── Data/
+├── Migrations/
+├── Models/
+├── Services/
+├── Views/
+├── wwwroot/
+├── Program.cs
+├── Optica.csproj
 └── README.md
+
 
 ---
 
 ##  Objetivo del proyecto
 
-Este proyecto fue desarrollado con fines **educativos y productivos**, aplicando buenas prácticas de desarrollo web y simulando un entorno real de trabajo con un cliente.
+Desarrollar un sistema funcional que represente un caso real de gestión para una óptica, aplicando buenas prácticas de desarrollo backend y frontend.
 
-Forma parte del proceso de **etapa productiva** y del portafolio profesional del desarrollador.
-
----
-
-##  Mejoras futuras
-
-- Panel administrativo
-- Gestión de inventario
-- Sistema de citas
-- Integración con base de datos
-- Autenticación y roles de usuario
-- Despliegue en producción
+Este proyecto forma parte del **portafolio profesional** del desarrollador y de su proceso de **etapa productiva**.
 
 ---
 
@@ -70,11 +71,10 @@ Forma parte del proceso de **etapa productiva** y del portafolio profesional del
 
 **Miguel González**  
 Desarrollador en formación  
- Enfoque en desarrollo web frontend  
+Enfoque en desarrollo web y backend  
 
 ---
 
-## Licencia
+##  Licencia
 
-Este proyecto se distribuye bajo la licencia MIT.
-
+Proyecto con fines educativos y demostrativos.
